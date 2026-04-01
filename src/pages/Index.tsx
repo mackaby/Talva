@@ -192,12 +192,13 @@ const Index = () => {
             </p>
             <p>
               Under the hood, Clawabunga™ combines a graph-native data layer
-              with a WASM execution engine and built-in secrets vault. Build
-              knowledge graphs that your agents can traverse in real time. Deploy
-              custom logic as sandboxed WebAssembly modules. Inject API keys and
-              credentials securely — no .env files, no leaks. Every tenant gets
-              full namespace isolation, so you can run thousands of customers on
-              a single deployment without worrying about data bleed.
+              with WASM-powered serverless functions and a built-in secrets
+              vault. Run graph queries natively and build knowledge graphs on
+              top. Deploy custom backend logic as sandboxed WebAssembly
+              functions. Inject API keys and credentials securely — no .env
+              files, no leaks. Every tenant gets full namespace isolation, so
+              you can run thousands of customers on a single deployment without
+              worrying about data bleed.
             </p>
             <p>
               We believe the best developer platforms are the ones that feel

@@ -111,9 +111,9 @@ const Index = () => {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Clawabunga™ is a Backend-as-a-Service and AI platform built for the
-          agent era. Knowledge graphs, WASM runtimes, secrets management and
-          multi-tenant isolation — all in one lightweight, developer-first
+          Clawabunga™ is a Backend-as-a-Service built for the agent era. Native
+          graph queries, WASM-powered serverless functions, secrets management
+          and multi-tenant isolation — all in one lightweight, developer-first
           datastore.
         </p>
 

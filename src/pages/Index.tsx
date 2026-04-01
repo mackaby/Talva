@@ -26,7 +26,7 @@ const features = [
     icon: Box,
     title: "WASM Runtime",
     description:
-      "Run sandboxed WebAssembly modules at the edge. Deploy custom logic in any language that compiles to WASM.",
+      "Deploy serverless functions as sandboxed WebAssembly modules. Write custom backend logic in any language that compiles to WASM.",
   },
   {
     icon: KeyRound,

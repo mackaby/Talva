@@ -182,31 +182,29 @@ const Index = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Most backend platforms were designed for humans writing CRUD apps.
-              Clawabunga™ is different. It's an agent-first datastore and
-              Backend-as-a-Service that treats AI agents as first-class citizens
-              — with native support for tool calling, structured memory, and
-              autonomous workflows. Whether you're orchestrating a fleet of
-              coding agents or building a retrieval pipeline, Clawabunga™ gives
-              you the primitives without the boilerplate.
+              Most platforms were designed for humans writing CRUD apps.
+              Clawabunga™ is different. It's an agent-first datastore built so
+              that AI agents can create and manage your company's internal
+              systems — your CRM, knowledge base, project tracker, or whatever
+              your business needs. By building on Clawabunga™, you're securing
+              that agents and humans can collaborate on the same platform with
+              enterprise-level control.
             </p>
             <p>
               Under the hood, Clawabunga™ combines a graph-native data layer
-              with WASM-powered serverless functions and a built-in secrets
-              vault. Run graph queries natively and build knowledge graphs on
-              top. Deploy custom backend logic as sandboxed WebAssembly
-              functions. Inject API keys and credentials securely — no .env
-              files, no leaks. Every tenant gets full namespace isolation, so
-              you can run thousands of customers on a single deployment without
-              worrying about data bleed.
+              with WASM-powered serverless functions, an object store, and a
+              built-in secrets vault. Run graph queries natively and build
+              knowledge graphs on top. Deploy custom logic as sandboxed
+              WebAssembly functions. Inject API keys and credentials securely —
+              no .env files, no leaks. Fine-grained permissions ensure that
+              every agent and every human can only access what they should.
             </p>
             <p>
-              We believe the best developer platforms are the ones that feel
-              invisible. Clawabunga™ is serious infrastructure with a spirit
-              that doesn't take itself too seriously. It's built for teams who
-              want production-grade reliability without the enterprise
-              complexity. One API surface. One CLI. Zero config ceremonies. Just
-              ship.
+              We believe the best platforms are the ones that feel invisible.
+              Clawabunga™ is serious infrastructure with a spirit that doesn't
+              take itself too seriously. It's built for teams who want to
+              embrace the agentic future without giving up control. One API
+              surface. One CLI. Zero config ceremonies. Just ship.
             </p>
           </div>
         </div>

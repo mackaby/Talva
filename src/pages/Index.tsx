@@ -105,16 +105,16 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          Agent-first datastore
+          The platform where
           <br />
-          <span className="text-primary">with human control</span>
+          <span className="text-primary">agents build your apps</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Clawabunga™ is a Backend-as-a-Service built for the agent era. Native
-          graph queries, WASM-powered serverless functions, secrets management
-          and multi-tenant isolation — all in one lightweight, developer-first
-          datastore.
+          Clawabunga™ is an agent-first datastore that lets companies prepare
+          for an agentic world. Build your CRM, knowledge graph, or internal
+          tools on a platform where agents and humans work together — with
+          enterprise-grade control at every layer.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -182,31 +182,29 @@ const Index = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Most backend platforms were designed for humans writing CRUD apps.
-              Clawabunga™ is different. It's an agent-first datastore and
-              Backend-as-a-Service that treats AI agents as first-class citizens
-              — with native support for tool calling, structured memory, and
-              autonomous workflows. Whether you're orchestrating a fleet of
-              coding agents or building a retrieval pipeline, Clawabunga™ gives
-              you the primitives without the boilerplate.
+              Most platforms were designed for humans writing CRUD apps.
+              Clawabunga™ is different. It's an agent-first datastore built so
+              that AI agents can create and manage your company's internal
+              systems — your CRM, knowledge base, project tracker, or whatever
+              your business needs. By building on Clawabunga™, you're securing
+              that agents and humans can collaborate on the same platform with
+              enterprise-level control.
             </p>
             <p>
               Under the hood, Clawabunga™ combines a graph-native data layer
-              with WASM-powered serverless functions and a built-in secrets
-              vault. Run graph queries natively and build knowledge graphs on
-              top. Deploy custom backend logic as sandboxed WebAssembly
-              functions. Inject API keys and credentials securely — no .env
-              files, no leaks. Every tenant gets full namespace isolation, so
-              you can run thousands of customers on a single deployment without
-              worrying about data bleed.
+              with WASM-powered serverless functions, an object store, and a
+              built-in secrets vault. Run graph queries natively and build
+              knowledge graphs on top. Deploy custom logic as sandboxed
+              WebAssembly functions. Inject API keys and credentials securely —
+              no .env files, no leaks. Fine-grained permissions ensure that
+              every agent and every human can only access what they should.
             </p>
             <p>
-              We believe the best developer platforms are the ones that feel
-              invisible. Clawabunga™ is serious infrastructure with a spirit
-              that doesn't take itself too seriously. It's built for teams who
-              want production-grade reliability without the enterprise
-              complexity. One API surface. One CLI. Zero config ceremonies. Just
-              ship.
+              We believe the best platforms are the ones that feel invisible.
+              Clawabunga™ is serious infrastructure with a spirit that doesn't
+              take itself too seriously. It's built for teams who want to
+              embrace the agentic future without giving up control. One API
+              surface. One CLI. Zero config ceremonies. Just ship.
             </p>
           </div>
         </div>

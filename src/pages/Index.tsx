@@ -182,29 +182,23 @@ const Index = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Most platforms were designed for humans writing CRUD apps.
-              Clawabunga™ is different. It's an agent-first datastore built so
-              that AI agents can create and manage your company's internal
-              systems — your CRM, knowledge base, project tracker, or whatever
-              your business needs. By building on Clawabunga™, you're securing
-              that agents and humans can collaborate on the same platform with
-              enterprise-level control.
+              Think of Clawabunga™ as a datastore that speaks agent. Your AI
+              agents can build a CRM, a knowledge base, or any internal tool —
+              and then other agents (or humans) can use those same apps.
+              It's not tied to any specific AI provider. Bring Claude, OpenAI,
+              or your own models. They all plug in the same way.
             </p>
             <p>
-              Under the hood, Clawabunga™ combines a graph-native data layer
-              with WASM-powered serverless functions, an object store, and a
-              built-in secrets vault. Run graph queries natively and build
-              knowledge graphs on top. Deploy custom logic as sandboxed
-              WebAssembly functions. Inject API keys and credentials securely —
-              no .env files, no leaks. Fine-grained permissions ensure that
-              every agent and every human can only access what they should.
+              Under the hood you get graph queries, an object store,
+              serverless WASM functions, and a secrets vault. Agents can
+              store data, run logic, and manage credentials — all through a
+              simple API. Fine-grained permissions mean you decide exactly
+              what each agent and each person can see and do.
             </p>
             <p>
-              We believe the best platforms are the ones that feel invisible.
-              Clawabunga™ is serious infrastructure with a spirit that doesn't
-              take itself too seriously. It's built for teams who want to
-              embrace the agentic future without giving up control. One API
-              surface. One CLI. Zero config ceremonies. Just ship.
+              The result: your company builds on a platform that's ready for
+              an agentic future, without giving up enterprise-level control.
+              One API. One CLI. No config ceremonies. Just ship.
             </p>
           </div>
         </div>

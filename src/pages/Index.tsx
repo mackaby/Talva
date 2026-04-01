@@ -137,11 +137,11 @@ const Index = () => {
             Platform
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Everything agents need. Nothing they don't.
+            One platform. Any agent. Full control.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            A purpose-built backend for autonomous systems — with the
-            guardrails, isolation and observability that production demands.
+            Connect your favorite AI — Claude, OpenAI, or anything else.
+            Clawabunga™ is agent-agnostic by design.
           </p>
         </div>
 

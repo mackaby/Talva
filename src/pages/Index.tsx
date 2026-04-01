@@ -105,16 +105,16 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          Agent-first datastore
+          The platform where
           <br />
-          <span className="text-primary">with human control</span>
+          <span className="text-primary">agents build your apps</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Clawabunga™ is a Backend-as-a-Service built for the agent era. Native
-          graph queries, WASM-powered serverless functions, secrets management
-          and multi-tenant isolation — all in one lightweight, developer-first
-          datastore.
+          Clawabunga™ is an agent-first datastore that lets companies prepare
+          for an agentic world. Build your CRM, knowledge graph, or internal
+          tools on a platform where agents and humans work together — with
+          enterprise-grade control at every layer.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

@@ -42,9 +42,9 @@ const features = [
   },
   {
     icon: Layers,
-    title: "Multi-Tenant",
+    title: "Object Store",
     description:
-      "Complete namespace isolation per tenant. Run thousands of isolated environments on a single deployment.",
+      "Store and retrieve files, blobs, and unstructured data. Built-in object storage for agents that need to manage assets and artifacts.",
   },
   {
     icon: ShieldCheck,

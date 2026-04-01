@@ -18,9 +18,9 @@ import {
 const features = [
   {
     icon: GitBranch,
-    title: "Knowledge Graphs",
+    title: "Graph Queries",
     description:
-      "Build, traverse and query graph data natively. Model complex relationships between entities with first-class graph support.",
+      "Query and traverse graph data natively. Model complex relationships between entities and build knowledge graphs on top of first-class graph primitives.",
   },
   {
     icon: Box,

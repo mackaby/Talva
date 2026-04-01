@@ -18,15 +18,15 @@ import {
 const features = [
   {
     icon: GitBranch,
-    title: "Knowledge Graphs",
+    title: "Graph Queries",
     description:
-      "Build, traverse and query graph data natively. Model complex relationships between entities with first-class graph support.",
+      "Query and traverse graph data natively. Model complex relationships between entities and build knowledge graphs on top of first-class graph primitives.",
   },
   {
     icon: Box,
-    title: "WASM Runtime",
+    title: "WASM Functions",
     description:
-      "Run sandboxed WebAssembly modules at the edge. Deploy custom logic in any language that compiles to WASM.",
+      "Deploy serverless functions as sandboxed WebAssembly modules. Write custom backend logic in any language that compiles to WASM.",
   },
   {
     icon: KeyRound,
@@ -111,9 +111,9 @@ const Index = () => {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Clawabunga™ is a Backend-as-a-Service and AI platform built for the
-          agent era. Knowledge graphs, WASM runtimes, secrets management and
-          multi-tenant isolation — all in one lightweight, developer-first
+          Clawabunga™ is a Backend-as-a-Service built for the agent era. Native
+          graph queries, WASM-powered serverless functions, secrets management
+          and multi-tenant isolation — all in one lightweight, developer-first
           datastore.
         </p>
 
@@ -192,12 +192,13 @@ const Index = () => {
             </p>
             <p>
               Under the hood, Clawabunga™ combines a graph-native data layer
-              with a WASM execution engine and built-in secrets vault. Build
-              knowledge graphs that your agents can traverse in real time. Deploy
-              custom logic as sandboxed WebAssembly modules. Inject API keys and
-              credentials securely — no .env files, no leaks. Every tenant gets
-              full namespace isolation, so you can run thousands of customers on
-              a single deployment without worrying about data bleed.
+              with WASM-powered serverless functions and a built-in secrets
+              vault. Run graph queries natively and build knowledge graphs on
+              top. Deploy custom backend logic as sandboxed WebAssembly
+              functions. Inject API keys and credentials securely — no .env
+              files, no leaks. Every tenant gets full namespace isolation, so
+              you can run thousands of customers on a single deployment without
+              worrying about data bleed.
             </p>
             <p>
               We believe the best developer platforms are the ones that feel

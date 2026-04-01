@@ -105,16 +105,15 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          Apps built by agents.
+          The datastore built
           <br />
-          <span className="text-primary">Used by agents and humans.</span>
+          <span className="text-primary">for the agent era</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Clawabunga™ is a datastore where AI agents don't just build your
-          internal tools — they use them too. Bring any agent (Claude, OpenAI,
-          or your own) and let them create, read, and act on your company's
-          data. With enterprise-grade permissions so you stay in control.
+          Build your company's apps and systems on Clawabunga™ — a datastore
+          platform where agents and humans are both first-class citizens.
+          Agent-agnostic, enterprise-grade, and ready for what's next.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

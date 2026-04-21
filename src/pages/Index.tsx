@@ -65,7 +65,7 @@ const Index = () => {
     setSubmitted(true);
     toast({
       title: "You're on the list! 🎉",
-      description: "We'll reach out when Clawabunga™ beta is ready.",
+      description: "We'll reach out when Talva beta is ready.",
     });
     setName("");
     setEmail("");
@@ -83,7 +83,7 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Zap className="h-6 w-6 text-primary" />
             <span className="text-lg font-bold tracking-tight text-foreground">
-              Clawabunga<sup className="text-xs text-muted-foreground">™</sup>
+              Talva
             </span>
           </div>
           <Button size="sm" onClick={scrollToBeta}>
@@ -111,7 +111,7 @@ const Index = () => {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Build your company's apps and systems on Clawabunga™ — a datastore
+          Build your company's apps and systems on Talva — a datastore
           platform where agents and humans are both first-class citizens.
           Agent-agnostic, enterprise-grade, and ready for what's next.
         </p>
@@ -140,7 +140,7 @@ const Index = () => {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Connect your favorite AI — Claude, OpenAI, or anything else.
-            Clawabunga™ is agent-agnostic by design.
+            Talva is agent-agnostic by design.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ const Index = () => {
             variant="outline"
             className="mb-4 border-primary/30 bg-primary/10 text-primary"
           >
-            Why Clawabunga™
+            Why Talva
           </Badge>
           <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Hard tech. Lightweight touch.
@@ -181,7 +181,7 @@ const Index = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Think of Clawabunga™ as a datastore that speaks agent. Your AI
+              Think of Talva as a datastore that speaks agent. Your AI
               agents can build a CRM, a knowledge base, or any internal tool —
               and then other agents (or humans) can use those same apps.
               It's not tied to any specific AI provider. Bring Claude, OpenAI,
@@ -215,7 +215,7 @@ const Index = () => {
           Get early access
         </h2>
         <p className="mb-8 text-muted-foreground">
-          We're opening Clawabunga™ to a limited group of builders. Drop your
+          We're opening Talva to a limited group of builders. Drop your
           email and we'll be in touch.
         </p>
 
@@ -260,11 +260,11 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Zap className="h-5 w-5 text-primary" />
             <span className="font-semibold text-foreground">
-              Clawabunga<sup className="text-xs text-muted-foreground">™</sup>
+              Talva
             </span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2026 Clawabunga™. All rights reserved.
+            © 2026 Talva. All rights reserved.
           </p>
         </div>
       </footer>

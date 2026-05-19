@@ -92,6 +92,7 @@ const Index = () => {
         </div>
       </nav>
 
+      <main>
       {/* Hero */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
         {/* Glow effect */}
@@ -253,6 +254,8 @@ const Index = () => {
           </form>
         )}
       </section>
+
+      </main>
 
       {/* Footer */}
       <footer className="border-t border-border/50 bg-card/30">

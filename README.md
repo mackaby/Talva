@@ -1,6 +1,8 @@
 # Talva Website
 
-This repository contains the public website for [Talva™](https://talva.dev) — an agent-agnostic datastore platform.
+This repository contains the public website for **Talva™** — an agent-agnostic datastore platform.
+
+**Live site:** [talva.dev](https://talva.dev)
 
 ## License
 

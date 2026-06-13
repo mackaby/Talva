@@ -87,9 +87,20 @@ const Index = () => {
               Talva<sup>™</sup>
             </span>
           </div>
-          <Button size="sm" onClick={scrollToBeta}>
-            Join Beta
-          </Button>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://github.com/mackaby/Talva"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+              aria-label="GitHub"
+            >
+              <Github className="h-5 w-5" />
+            </a>
+            <Button size="sm" onClick={scrollToBeta}>
+              Join Beta
+            </Button>
+          </div>
         </div>
       </nav>
 

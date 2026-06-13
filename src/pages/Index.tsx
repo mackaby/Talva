@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   Zap,
   ArrowRight,
+  Github,
 } from "lucide-react";
 
 const features = [

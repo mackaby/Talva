@@ -124,9 +124,10 @@ const Index = () => {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Build your company's apps and systems on Talva™ — a datastore
-          platform where agents and humans are both first-class citizens.
-          Agent-agnostic, enterprise-grade, and ready for what's next.
+          Autonomous agents are spreading fast — but how do you control what
+          they do, keep them consistent, and own your data? Talva™ is a
+          native-first platform that gives enterprises the guardrails to build
+          reliable agentic apps, with full data ownership and zero lock-in.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -194,23 +195,26 @@ const Index = () => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Think of Talva™ as a datastore that speaks agent. Your AI
-              agents can build a CRM, a knowledge base, or any internal tool —
-              and then other agents (or humans) can use those same apps.
-              It's not tied to any specific AI provider. Bring Claude, OpenAI,
-              or your own models. They all plug in the same way.
+              Every enterprise is deploying AI agents — but most are flying
+              blind. Different agents make different decisions, data ends up
+              scattered across services you don't control, and "consistent
+              behavior" is wishful thinking. Talva™ changes that by giving you
+              a single platform where every agent reads from, writes to, and
+              operates on the same source of truth.
             </p>
             <p>
-              Under the hood you get graph queries, an object store,
-              serverless WASM functions, and a secrets vault. Agents can
-              store data, run logic, and manage credentials — all through a
-              simple API. Fine-grained permissions mean you decide exactly
-              what each agent and each person can see and do.
+              Talva™ is native-first: any app built on it runs as a first-class
+              citizen with your data fully under your control — no third-party
+              lock-in, no hidden egress fees. Under the hood you get graph
+              queries, an object store, serverless WASM functions, and a secrets
+              vault. Agents store data, run logic, and manage credentials
+              through a unified API. Fine-grained permissions mean you decide
+              exactly what each agent and each person can see and do.
             </p>
             <p>
-              The result: your company builds on a platform that's ready for
-              an agentic future, without giving up enterprise-level control.
-              One API. One CLI. No config ceremonies. Just ship.
+              The result: your company ships agentic apps with the consistency
+              and control enterprises actually need. One API. One CLI. No
+              config ceremonies.
             </p>
           </div>
         </div>

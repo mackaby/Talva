@@ -124,10 +124,11 @@ const Index = () => {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Autonomous agents are spreading fast — but how do you control what
-          they do, keep them consistent, and own your data? Talva™ is a
-          native-first platform that gives enterprises the guardrails to build
-          reliable agentic apps, with full data ownership and zero lock-in.
+          Every team is shipping autonomous agents — but each one builds
+          differently. No consistency. No control. No visibility. Talva™ is
+          the consistency platform: build apps across your company with
+          enforced standards, full control, and enterprise security — at the
+          speed of light.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">

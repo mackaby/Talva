@@ -4,6 +4,14 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import GraphQueries from "./pages/platform/GraphQueries.tsx";
+import WasmFunctions from "./pages/platform/WasmFunctions.tsx";
+import Secrets from "./pages/platform/Secrets.tsx";
+import AgentNative from "./pages/platform/AgentNative.tsx";
+import TalvaVsLangchain from "./pages/compare/TalvaVsLangchain.tsx";
+import TalvaVsWeaviate from "./pages/compare/TalvaVsWeaviate.tsx";
+import BlogIndex from "./pages/blog/BlogIndex.tsx";
+import BlogPost from "./pages/blog/BlogPost.tsx";
 
 const queryClient = new QueryClient();
 
@@ -14,6 +22,14 @@ const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/platform/graph-queries" element={<GraphQueries />} />
+        <Route path="/platform/wasm-functions" element={<WasmFunctions />} />
+        <Route path="/platform/secrets" element={<Secrets />} />
+        <Route path="/platform/agent-native" element={<AgentNative />} />
+        <Route path="/compare/talva-vs-langchain" element={<TalvaVsLangchain />} />
+        <Route path="/compare/talva-vs-weaviate" element={<TalvaVsWeaviate />} />
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

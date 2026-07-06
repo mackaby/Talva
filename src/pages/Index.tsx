@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { SeoHead } from "@/components/SeoHead";
 import {
   GitBranch,
   Box,
@@ -22,24 +24,28 @@ const features = [
     title: "Graph Queries",
     description:
       "Query and traverse graph data natively. Model complex relationships between entities and build knowledge graphs on top of first-class graph primitives.",
+    to: "/platform/graph-queries",
   },
   {
     icon: Box,
     title: "WASM Functions",
     description:
       "Deploy serverless functions as sandboxed WebAssembly modules. Write custom backend logic in any language that compiles to WASM.",
+    to: "/platform/wasm-functions",
   },
   {
     icon: KeyRound,
     title: "Secrets Management",
     description:
       "Secure credential and API key storage built into the platform. Zero-config secret injection for your agents.",
+    to: "/platform/secrets",
   },
   {
     icon: Bot,
     title: "Agent-Native",
     description:
       "Designed from the ground up for AI agents, not retrofitted. Native tool-calling, context windows, and memory.",
+    to: "/platform/agent-native",
   },
   {
     icon: Layers,
@@ -78,6 +84,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SeoHead
+        title="Talva™ — Agent-First Datastore & BaaS Platform"
+        description="Talva™ is an agent-first Backend-as-a-Service with knowledge graphs, WASM runtime, secrets management and multi-tenant isolation. Join the beta."
+        path="/"
+      />
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -86,6 +97,11 @@ const Index = () => {
             <span className="text-lg font-bold tracking-tight text-foreground">
               Talva<sup>™</sup>
             </span>
+          </div>
+          <div className="hidden items-center gap-6 md:flex">
+            <Link to="/platform/graph-queries" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
+            <Link to="/compare/talva-vs-langchain" className="text-sm text-muted-foreground hover:text-foreground">Compare</Link>
+            <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link>
           </div>
           <div className="flex items-center gap-3">
             <a
@@ -160,24 +176,33 @@ const Index = () => {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((f) => (
-            <Card
-              key={f.title}
-              className="group border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]"
-            >
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <f.icon className="h-5 w-5 text-primary" />
-                </div>
-                <h3 className="mb-2 text-lg font-semibold text-foreground">
-                  {f.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {f.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+          {features.map((f) => {
+            const card = (
+              <Card
+                className="group h-full border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]"
+              >
+                <CardContent className="p-6">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <f.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="mb-2 text-lg font-semibold text-foreground">
+                    {f.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {f.description}
+                  </p>
+                  {f.to && (
+                    <p className="mt-4 text-sm font-medium text-primary">Learn more →</p>
+                  )}
+                </CardContent>
+              </Card>
+            );
+            return f.to ? (
+              <Link key={f.title} to={f.to}>{card}</Link>
+            ) : (
+              <div key={f.title}>{card}</div>
+            );
+          })}
         </div>
       </section>
 

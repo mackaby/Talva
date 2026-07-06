@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { SeoHead } from "@/components/SeoHead";
 import {
   GitBranch,
   Box,
@@ -78,6 +80,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SeoHead
+        title="Talva™ — Agent-First Datastore & BaaS Platform"
+        description="Talva™ is an agent-first Backend-as-a-Service with knowledge graphs, WASM runtime, secrets management and multi-tenant isolation. Join the beta."
+        path="/"
+      />
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

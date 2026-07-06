@@ -24,24 +24,28 @@ const features = [
     title: "Graph Queries",
     description:
       "Query and traverse graph data natively. Model complex relationships between entities and build knowledge graphs on top of first-class graph primitives.",
+    to: "/platform/graph-queries",
   },
   {
     icon: Box,
     title: "WASM Functions",
     description:
       "Deploy serverless functions as sandboxed WebAssembly modules. Write custom backend logic in any language that compiles to WASM.",
+    to: "/platform/wasm-functions",
   },
   {
     icon: KeyRound,
     title: "Secrets Management",
     description:
       "Secure credential and API key storage built into the platform. Zero-config secret injection for your agents.",
+    to: "/platform/secrets",
   },
   {
     icon: Bot,
     title: "Agent-Native",
     description:
       "Designed from the ground up for AI agents, not retrofitted. Native tool-calling, context windows, and memory.",
+    to: "/platform/agent-native",
   },
   {
     icon: Layers,

@@ -7,10 +7,10 @@ export default function AgentNative() {
       icon={Bot}
       path="/platform/agent-native"
       eyebrow="Platform"
-      title="Agent-Agnostic Backend Platform — Talva™"
-      description="An agent-agnostic backend for AI. Bring Claude, OpenAI or any model — Talva™ gives every agent the same data, tools, permissions and audit trail."
-      h1="One backend. Any agent. Consistent behavior."
-      intro="Your teams are shipping agents on Claude, OpenAI, Gemini, open-source models — and each one talks to a different backend. Talva™ is the agent-agnostic layer underneath: same data, same tools, same permissions, no matter which model is driving."
+      title="Agent-Agnostic AI Agent Backend — Talva™ Enterprise AI Agent Platform"
+      description="Talva™ is the enterprise AI agent platform and AI agent backend. Bring Claude, OpenAI or any model — one consistent backend for every AI agent your company ships."
+      h1="The enterprise AI agent platform. Any model. One backend."
+      intro="Your teams are shipping AI agents on Claude, OpenAI, Gemini and open-source models — each one talking to a different backend. Talva™ is the enterprise AI agent platform underneath: one AI agent backend with the same data, tools, permissions and audit trail, no matter which model is driving."
       sections={[
         {
           heading: "The consistency problem",

@@ -3,11 +3,11 @@ import { ComparePage } from "./ComparePage";
 export default function TalvaVsWeaviate() {
   return (
     <ComparePage
-      title="Talva™ vs Weaviate — Datastore comparison for AI agents"
-      description="Compare Talva™ and Weaviate as backends for AI agents. Weaviate is a vector database; Talva™ is a graph-native, agent-agnostic backend platform. Here’s how to pick."
+      title="Talva™ vs Weaviate — Enterprise AI Agent Platform vs Vector Database"
+      description="Compare Talva™ and Weaviate as AI agent backends. Weaviate is a vector database; Talva™ is the enterprise AI agent platform and AI agent backend. Here’s how to pick."
       path="/compare/talva-vs-weaviate"
-      h1="Talva™ vs Weaviate"
-      intro="Weaviate is a strong vector database, and vector search is one piece of what AI agents need. Talva™ is a broader backend platform — graph queries, functions, secrets and storage — designed for agents that need to reason over relationships, not just find similar chunks."
+      h1="Talva™ vs Weaviate — enterprise AI agent platform vs vector DB"
+      intro="Weaviate is a strong vector database, and vector search is one piece of what AI agents need. Talva™ is the broader enterprise AI agent platform — the AI agent backend with graph queries, functions, secrets and storage — for agents that need to reason over relationships, not just find similar chunks."
       otherName="Weaviate"
       rows={[
         { feature: "Primary access pattern", talva: "Graph traversal", other: "Vector similarity" },

@@ -7,10 +7,10 @@ export default function GraphQueries() {
       icon={GitBranch}
       path="/platform/graph-queries"
       eyebrow="Platform"
-      title="Knowledge Graph for AI Agents — Talva™"
-      description="Native graph queries for AI agents. Model relationships, traverse entities and build enterprise knowledge graphs your autonomous agents can reason over."
-      h1="A knowledge graph built for autonomous agents"
-      intro="AI agents make better decisions when they can see how things connect. Talva™ ships with first-class graph primitives so your agents can traverse relationships, follow chains of reasoning and answer questions that flat tables can’t."
+      title="Knowledge Graph for AI Agents — Talva™ Enterprise AI Agent Platform"
+      description="Native graph queries in the Talva™ enterprise AI agent platform. Model relationships and build knowledge graphs your AI agent backend can reason over."
+      h1="Knowledge graph for the enterprise AI agent platform"
+      intro="AI agents make better decisions when they can see how things connect. Talva™ — the enterprise AI agent platform — ships with first-class graph primitives, so every AI agent on your backend can traverse relationships and answer questions that flat tables can’t."
       sections={[
         {
           heading: "Why graphs matter for agents",

@@ -7,10 +7,10 @@ export default function Secrets() {
       icon={KeyRound}
       path="/platform/secrets"
       eyebrow="Platform"
-      title="Secrets Management for AI Agents — Talva™"
-      description="Give AI agents API keys and credentials without leaking them. Talva™ injects secrets into WASM functions at call time, scoped per-agent and fully audited."
-      h1="Secrets management built for autonomous agents"
-      intro="Every agent you ship needs API keys — for the LLM, for internal services, for third-party tools. Passing those keys through prompts or environment variables is how enterprises get breached. Talva™ keeps secrets in a vault and injects them at execution time, scoped to the calling agent."
+      title="Secrets Management for AI Agents — Talva™ Enterprise AI Agent Platform"
+      description="Give AI agents API keys without leaking them. Talva™ — the enterprise AI agent platform and AI agent backend — scopes secrets per agent and audits every use."
+      h1="Secrets management for the enterprise AI agent platform"
+      intro="Every AI agent you ship needs API keys — for the LLM, for internal services, for third-party tools. Passing them through prompts or env vars is how enterprises get breached. Talva™, the enterprise AI agent platform, keeps secrets in a vault and injects them at execution time inside your AI agent backend, scoped to the calling agent."
       sections={[
         {
           heading: "The problem with agent credentials today",

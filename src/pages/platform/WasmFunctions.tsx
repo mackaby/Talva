@@ -7,10 +7,10 @@ export default function WasmFunctions() {
       icon={Box}
       path="/platform/wasm-functions"
       eyebrow="Platform"
-      title="WASM Functions for AI Agents — Talva™"
-      description="Deploy serverless WebAssembly functions your AI agents can call as tools. Sandboxed, polyglot, permission-aware — write backend logic in any language that compiles to WASM."
-      h1="Serverless WASM functions your agents can call"
-      intro="Agents need to do more than answer questions — they need to run code. Talva™ lets you deploy sandboxed WebAssembly functions that any agent on the platform can invoke as a tool, with the same auth and permission checks as the rest of your data."
+      title="WASM Functions for AI Agents — Talva™ Enterprise AI Agent Platform"
+      description="Deploy WebAssembly functions your AI agents call as tools. Part of the Talva™ enterprise AI agent platform and AI agent backend — sandboxed, polyglot, permission-aware."
+      h1="WASM functions for the enterprise AI agent platform"
+      intro="AI agents need to do more than answer questions — they need to run code. Talva™, the enterprise AI agent platform, lets you deploy sandboxed WebAssembly functions that any AI agent on your backend can invoke as a tool, with the same auth and permission checks as the rest of your data."
       sections={[
         {
           heading: "Why WASM instead of containers",

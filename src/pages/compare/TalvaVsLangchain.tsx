@@ -3,11 +3,11 @@ import { ComparePage } from "./ComparePage";
 export default function TalvaVsLangchain() {
   return (
     <ComparePage
-      title="Talva™ vs LangChain — Which fits your agent stack?"
-      description="Compare Talva™ and LangChain for building AI agents. Talva™ is an agent-agnostic backend platform; LangChain is an orchestration framework. Here’s when to pick which."
+      title="Talva™ vs LangChain — Enterprise AI Agent Platform vs Orchestration Framework"
+      description="Compare Talva™ and LangChain for AI agents. Talva™ is the enterprise AI agent platform and AI agent backend; LangChain is an orchestration framework. When to pick which."
       path="/compare/talva-vs-langchain"
-      h1="Talva™ vs LangChain"
-      intro="LangChain and Talva™ solve different halves of the same problem. LangChain orchestrates what an agent does step-by-step; Talva™ is the backend that agent talks to. Most serious deployments end up needing both — this page explains why."
+      h1="Talva™ vs LangChain — enterprise AI agent platform vs framework"
+      intro="LangChain and Talva™ solve different halves of the same problem. LangChain orchestrates what an AI agent does step-by-step; Talva™ is the enterprise AI agent platform and AI agent backend that agent talks to. Most serious deployments end up needing both — this page explains why."
       otherName="LangChain"
       rows={[
         { feature: "Category", talva: "Agent backend / datastore", other: "Agent orchestration framework" },

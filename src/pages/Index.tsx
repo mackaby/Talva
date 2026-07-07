@@ -85,10 +85,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Talva™ — Agent-First Datastore & BaaS Platform"
-        description="Talva™ is an agent-first Backend-as-a-Service with knowledge graphs, WASM runtime, secrets management and multi-tenant isolation. Join the beta."
+        title="Talva™ — Enterprise AI Agent Platform & Backend"
+        description="Talva™ is the enterprise AI agent platform and backend for AI agents — one consistent, secure foundation for every agent your company ships. Join the beta."
         path="/"
       />
+
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

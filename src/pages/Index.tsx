@@ -21,13 +21,13 @@ const pillars = [
     icon: Hammer,
     title: "Build",
     description:
-      "Start from a backend designed for AI-native software, so teams spend their time on what the product actually does — not on stitching infrastructure together.",
+      "Start from a platform designed for AI-native software, so teams spend their time on what the product actually does — not on stitching infrastructure together.",
   },
   {
     icon: Activity,
     title: "Run",
     description:
-      "One consistent foundation to operate on. Predictable behaviour, one place for the pieces AI-native apps depend on, boring operations.",
+      "One consistent platform to operate on. Predictable behaviour, one place for the pieces AI-native apps depend on, boring operations.",
   },
   {
     icon: GitBranch,
@@ -39,9 +39,10 @@ const pillars = [
     icon: Bot,
     title: "Use",
     description:
-      "Any client — human or AI — meets your product through the same backend, with the same behaviour and the same controls.",
+      "Any client — human or AI — meets your product through the same platform, with the same behaviour and the same controls.",
     to: "/platform/agent-native",
   },
+
 ];
 
 const Index = () => {
@@ -68,8 +69,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Talva — the backend layer for AI-native software"
-        description="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software. Join the beta."
+        title="Talva — the platform for AI-native software"
+        description="Talva is the platform for building, running, evolving and using AI-native software. Join the beta."
         path="/"
       />
 
@@ -116,16 +117,17 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          The backend layer for
+          The platform for
           <br />
           <span className="text-primary">AI-native software</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Talva makes it easy to build, run, evolve and use AI-native software —
-          one foundation your teams can stand on instead of assembling one from
-          scratch every time.
+          Talva is where AI-native software gets built, run, evolved and used —
+          one platform for the teams behind the product and the people (and
+          agents) using it.
         </p>
+
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Button size="lg" onClick={scrollToBeta} className="gap-2">
@@ -150,9 +152,10 @@ const Index = () => {
             Build. Run. Evolve. Use.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            One backend layer for the full life of an AI-native product — not a
-            kit you reassemble every time the ground moves.
+            One platform for the full life of an AI-native product — not a kit
+            you reassemble every time the ground moves.
           </p>
+
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -194,7 +197,7 @@ const Index = () => {
             Why Talva
           </Badge>
           <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Treat the backend as the product.
+            One platform, not a stack to reassemble.
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -204,17 +207,18 @@ const Index = () => {
               has to stay coherent while the models and tools around it shift.
             </p>
             <p>
-              A backend that wasn't designed for those traits has to be bent into
-              shape every time one of them changes. Talva is designed for them
-              from the start — so the parts of your product that should stay
-              constant, do.
+              Stitching that together from scratch every time is how products
+              end up inconsistent and painful to operate. Talva is one platform
+              designed for those traits from the start — so the parts of your
+              product that should stay constant, do.
             </p>
             <p>
               The client someone uses today isn't the client they'll use next
-              year. Talva makes the backend the fixed point, so what's above it
-              can move without a rewrite underneath.
+              year. Talva stays the fixed point, so what's above it can move
+              without a rewrite underneath.
             </p>
           </div>
+
         </div>
       </section>
 

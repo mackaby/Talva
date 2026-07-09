@@ -1,12 +1,13 @@
 # Talva
 
-> Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software.
+> Talva is the platform for building, running, evolving and using AI-native software.
 
 Talva focuses on being the foundation AI-native software is built on, so teams don't reassemble one from scratch for every product. It's designed to stay consistent as the models, agentic clients and patterns around it keep changing.
 
 ## Pages
 
 - [Home](/): Overview and beta signup.
-- [Platform](/platform): What the backend layer covers — build, run, evolve, use.
-- [Any client](/platform/agent-native): Why the client is swappable and the backend is the fixed point.
+- [Platform](/platform): What the platform covers — build, run, evolve, use.
+- [Any client](/platform/agent-native): Why the client is swappable and the platform is the fixed point.
+
 - [Blog](/blog): Perspectives on AI-native software.

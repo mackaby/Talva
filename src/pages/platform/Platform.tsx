@@ -7,18 +7,18 @@ export default function Platform() {
       icon={Layers}
       path="/platform"
       eyebrow="Platform"
-      title="Talva — the backend layer for AI-native software"
-      description="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software."
-      h1="The backend layer for AI-native software"
-      intro="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software — one foundation your teams can stand on instead of assembling from scratch every time."
+      title="Talva — the platform for AI-native software"
+      description="Talva is the platform for building, running, evolving and using AI-native software."
+      h1="The platform for AI-native software"
+      intro="Talva is the platform for building, running, evolving and using AI-native software — one place for the teams behind the product and the people (and agents) using it, instead of a stack you reassemble from scratch every time."
       sections={[
         {
           heading: "Build",
-          body: "Start from a backend designed for AI-native software from day one, so teams spend their time on what the product actually does — not on stitching together infrastructure to make an AI-native app possible.",
+          body: "Start from a platform designed for AI-native software from day one, so teams spend their time on what the product actually does — not on stitching together infrastructure to make an AI-native app possible.",
         },
         {
           heading: "Run",
-          body: "Operate AI-native software on a consistent foundation. One place for the pieces AI-native apps depend on, so behaviour is predictable and operations are boring.",
+          body: "Operate AI-native software on one consistent platform. One place for the pieces AI-native apps depend on, so behaviour is predictable and operations are boring.",
         },
         {
           heading: "Evolve",
@@ -26,9 +26,10 @@ export default function Platform() {
         },
         {
           heading: "Use",
-          body: "Any client — human or AI — meets your product through the same backend. Consistent behaviour, consistent controls, whoever (or whatever) is on the other end.",
+          body: "Any client — human or AI — meets your product through the same platform. Consistent behaviour, consistent controls, whoever (or whatever) is on the other end.",
         },
       ]}
+
     />
   );
 }

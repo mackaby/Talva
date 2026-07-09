@@ -1,13 +1,12 @@
 # Talva
 
-> Talva is the enterprise AI agent platform: a unified data and API layer you connect your existing data sources to, so every AI agent your company ships works against one consistent, permissioned backend.
+> Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software.
 
-Talva is not a database, a vector store, or an agent framework. It sits above your existing data sources — like Hasura DDN does for apps — and gives every AI agent in your company one API, one auth model, one audit trail. Bring your own AI (Claude, OpenAI, or anything else); agents are first-class users.
+Talva focuses on being the foundation AI-native software is built on, so teams don't reassemble one from scratch for every product. It's designed to stay consistent as the models, agentic clients and patterns around it keep changing.
 
 ## Pages
 
-- [Home](/): Platform overview and beta signup.
-- [Data Layer](/platform/data-layer): Unified data layer for AI agents.
-- [WASM Functions](/platform/wasm-functions): Sandboxed functions agents call as tools.
-- [Secrets](/platform/secrets): Per-agent secrets management.
-- [Agent-Native](/platform/agent-native): Model-agnostic agent backend.
+- [Home](/): Overview and beta signup.
+- [Platform](/platform): What the backend layer covers — build, run, evolve, use.
+- [Any client](/platform/agent-native): Why the client is swappable and the backend is the fixed point.
+- [Blog](/blog): Perspectives on AI-native software.

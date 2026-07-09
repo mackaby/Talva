@@ -42,9 +42,9 @@ const features = [
   },
   {
     icon: Bot,
-    title: "Agent-Native",
+    title: "Client-Agnostic",
     description:
-      "Designed from the ground up for AI agents, not retrofitted. Bring any model — Claude, OpenAI, open-source — and hit the same backend.",
+      "Bring any agentic client — Codex, Claude Code, OpenCode, Cursor, LangChain or your own. They all hit the same Talva™ backend with the same auth.",
     to: "/platform/agent-native",
   },
   {
@@ -168,11 +168,11 @@ const Index = () => {
             Platform
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            One platform. Any agent. Full control.
+            One platform. Any client. Full control.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Connect your favorite AI — Claude, OpenAI, or anything else.
-            Talva™ is agent-agnostic by design.
+            Bring your favorite agentic client — Codex, Claude Code, OpenCode,
+            Cursor, LangChain, or your own. Talva™ is client-agnostic by design.
           </p>
         </div>
 

@@ -22,7 +22,7 @@ export default function WasmFunctions() {
         },
         {
           heading: "Enterprise controls, without the ceremony",
-          body: "Functions run inside the same permission model as graph queries and object storage. You decide which agents can call which functions, log every invocation, and revoke access without redeploying.",
+          body: "Functions run inside the same permission model as the rest of Talva™. You decide which agents can call which functions, log every invocation, and revoke access without redeploying.",
         },
       ]}
       faq={[

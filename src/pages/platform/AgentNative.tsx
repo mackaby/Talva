@@ -18,7 +18,7 @@ export default function AgentNative() {
         },
         {
           heading: "Model-agnostic by design",
-          body: "Talva™ exposes graph queries, functions, secrets and storage through one API. Any agent that can call a tool can use it — Claude, GPT, Llama, in-house models. Swap the model without rebuilding the backend.",
+          body: "Talva™ exposes your connected data sources, functions and secrets through one API. Any agent that can call a tool can use it — Claude, GPT, Llama, in-house models. Swap the model without rebuilding the backend.",
         },
         {
           heading: "First-class agent identities",

@@ -7,11 +7,11 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import { SeoHead } from "@/components/SeoHead";
 import {
-  GitBranch,
+  Layers,
   Box,
   KeyRound,
   Bot,
-  Layers,
+  Database,
   ShieldCheck,
   Zap,
   ArrowRight,
@@ -20,38 +20,38 @@ import {
 
 const features = [
   {
-    icon: GitBranch,
-    title: "Graph Queries",
+    icon: Layers,
+    title: "Unified Data Layer",
     description:
-      "Query and traverse graph data natively. Model complex relationships between entities and build knowledge graphs on top of first-class graph primitives.",
-    to: "/platform/graph-queries",
+      "Connect your existing data sources — databases, warehouses, internal APIs — and expose them through one governed API for every AI agent your company ships.",
+    to: "/platform/data-layer",
   },
   {
     icon: Box,
     title: "WASM Functions",
     description:
-      "Deploy serverless functions as sandboxed WebAssembly modules. Write custom backend logic in any language that compiles to WASM.",
+      "Deploy serverless functions as sandboxed WebAssembly modules. Give agents typed tools written in any language that compiles to WASM.",
     to: "/platform/wasm-functions",
   },
   {
     icon: KeyRound,
     title: "Secrets Management",
     description:
-      "Secure credential and API key storage built into the platform. Zero-config secret injection for your agents.",
+      "Secure credential and API key storage built into the platform. Zero-config secret injection scoped per agent.",
     to: "/platform/secrets",
   },
   {
     icon: Bot,
     title: "Agent-Native",
     description:
-      "Designed from the ground up for AI agents, not retrofitted. Native tool-calling, context windows, and memory.",
+      "Designed from the ground up for AI agents, not retrofitted. Bring any model — Claude, OpenAI, open-source — and hit the same backend.",
     to: "/platform/agent-native",
   },
   {
-    icon: Layers,
-    title: "Object Store",
+    icon: Database,
+    title: "Bring Your Own Data",
     description:
-      "Store and retrieve files, blobs, and unstructured data. Built-in object storage for agents that need to manage assets and artifacts.",
+      "Your data stays where it is. Talva™ sits in front of your existing systems — no migrations, no lock-in, no duplicated sources of truth.",
   },
   {
     icon: ShieldCheck,
@@ -100,8 +100,8 @@ const Index = () => {
             </span>
           </div>
           <div className="hidden items-center gap-6 md:flex">
-            <Link to="/platform/graph-queries" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
-            <Link to="/compare/talva-vs-langchain" className="text-sm text-muted-foreground hover:text-foreground">Compare</Link>
+            <Link to="/platform/data-layer" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
+            
             <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link>
           </div>
           <div className="flex items-center gap-3">
@@ -230,18 +230,22 @@ const Index = () => {
               operates on the same source of truth.
             </p>
             <p>
-              Talva™ is native-first: any app built on it runs as a first-class
-              citizen with your data fully under your control — no third-party
-              lock-in, no hidden egress fees. Under the hood you get graph
-              queries, an object store, serverless WASM functions, and a secrets
-              vault. Agents store data, run logic, and manage credentials
-              through a unified API. Fine-grained permissions mean you decide
+              Talva™ isn't a new database or a new agent framework — it's the
+              layer between them. You connect your existing data sources — the
+              databases, warehouses and internal APIs your company already runs
+              — and Talva™ exposes them as one governed API that every AI
+              agent, on any framework or model, talks to.
+            </p>
+            <p>
+              Alongside the data layer you get sandboxed WASM functions for
+              agent tool-calling, a secrets vault so credentials never leak
+              into prompts, and fine-grained permissions that let you decide
               exactly what each agent and each person can see and do.
             </p>
             <p>
               The result: your company ships agentic apps with the consistency
-              and control enterprises actually need. One API. One CLI. No
-              config ceremonies.
+              and control enterprises actually need. One API. One auth model.
+              One audit trail.
             </p>
           </div>
         </div>

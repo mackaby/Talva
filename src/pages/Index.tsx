@@ -151,9 +151,10 @@ const Index = () => {
             Build. Run. Evolve. Use.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            One backend layer for the full life of an AI-native product — not a
-            kit you reassemble every time the ground moves.
+            One platform for the full life of an AI-native product — not a kit
+            you reassemble every time the ground moves.
           </p>
+
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

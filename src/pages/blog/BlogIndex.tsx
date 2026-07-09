@@ -8,8 +8,8 @@ export default function BlogIndex() {
   return (
     <SiteLayout>
       <SeoHead
-        title="Talva™ Blog — Enterprise AI agent infrastructure"
-        description="Perspectives on building consistent, controlled, enterprise-grade AI agent stacks. Written by the team behind Talva™."
+        title="Talva Blog — Enterprise AI agent infrastructure"
+        description="Perspectives on building consistent, controlled, enterprise-grade AI agent stacks. Written by the team behind Talva."
         path="/blog"
       />
       <div className="mx-auto max-w-3xl px-6 py-16">

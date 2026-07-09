@@ -41,7 +41,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-2">
             <Zap className="h-5 w-5 text-primary" />
             <span className="font-semibold text-foreground">
-              Talva<sup>™</sup>
+              Talva
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -55,7 +55,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               GitHub
             </a>
             <p className="text-sm text-muted-foreground">
-              © 2026 Talva™. All rights reserved.
+              © 2026 Talva. All rights reserved.
             </p>
           </div>
         </div>

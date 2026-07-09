@@ -196,7 +196,7 @@ const Index = () => {
             Why Talva
           </Badge>
           <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Treat the backend as the product.
+            One platform, not a stack to reassemble.
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -206,17 +206,18 @@ const Index = () => {
               has to stay coherent while the models and tools around it shift.
             </p>
             <p>
-              A backend that wasn't designed for those traits has to be bent into
-              shape every time one of them changes. Talva is designed for them
-              from the start — so the parts of your product that should stay
-              constant, do.
+              Stitching that together from scratch every time is how products
+              end up inconsistent and painful to operate. Talva is one platform
+              designed for those traits from the start — so the parts of your
+              product that should stay constant, do.
             </p>
             <p>
               The client someone uses today isn't the client they'll use next
-              year. Talva makes the backend the fixed point, so what's above it
-              can move without a rewrite underneath.
+              year. Talva stays the fixed point, so what's above it can move
+              without a rewrite underneath.
             </p>
           </div>
+
         </div>
       </section>
 

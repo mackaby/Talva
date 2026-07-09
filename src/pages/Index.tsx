@@ -21,13 +21,13 @@ const pillars = [
     icon: Hammer,
     title: "Build",
     description:
-      "Start from a backend designed for AI-native software, so teams spend their time on what the product actually does — not on stitching infrastructure together.",
+      "Start from a platform designed for AI-native software, so teams spend their time on what the product actually does — not on stitching infrastructure together.",
   },
   {
     icon: Activity,
     title: "Run",
     description:
-      "One consistent foundation to operate on. Predictable behaviour, one place for the pieces AI-native apps depend on, boring operations.",
+      "One consistent platform to operate on. Predictable behaviour, one place for the pieces AI-native apps depend on, boring operations.",
   },
   {
     icon: GitBranch,
@@ -39,9 +39,10 @@ const pillars = [
     icon: Bot,
     title: "Use",
     description:
-      "Any client — human or AI — meets your product through the same backend, with the same behaviour and the same controls.",
+      "Any client — human or AI — meets your product through the same platform, with the same behaviour and the same controls.",
     to: "/platform/agent-native",
   },
+
 ];
 
 const Index = () => {

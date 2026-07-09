@@ -42,9 +42,9 @@ const features = [
   },
   {
     icon: Bot,
-    title: "Agent-Native",
+    title: "Client-Agnostic",
     description:
-      "Designed from the ground up for AI agents, not retrofitted. Bring any model — Claude, OpenAI, open-source — and hit the same backend.",
+      "Bring any agentic client — Codex, Claude Code, OpenCode, Cursor, LangChain or your own. They all hit the same Talva™ backend with the same auth.",
     to: "/platform/agent-native",
   },
   {

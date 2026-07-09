@@ -7,57 +7,40 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import { SeoHead } from "@/components/SeoHead";
 import {
-  Layers,
-  Box,
-  KeyRound,
+  Hammer,
+  Activity,
+  GitBranch,
   Bot,
-  Database,
-  ShieldCheck,
   Zap,
   ArrowRight,
   Github,
 } from "lucide-react";
 
-const features = [
+const pillars = [
   {
-    icon: Layers,
-    title: "Unified Data Layer",
+    icon: Hammer,
+    title: "Build",
     description:
-      "Connect your existing data sources — databases, warehouses, internal APIs — and expose them through one governed API for every AI agent your company ships.",
-    to: "/platform/data-layer",
+      "Start from a backend designed for AI-native software, so teams spend their time on what the product actually does — not on stitching infrastructure together.",
   },
   {
-    icon: Box,
-    title: "WASM Functions",
+    icon: Activity,
+    title: "Run",
     description:
-      "Deploy serverless functions as sandboxed WebAssembly modules. Give agents typed tools written in any language that compiles to WASM.",
-    to: "/platform/wasm-functions",
+      "One consistent foundation to operate on. Predictable behaviour, one place for the pieces AI-native apps depend on, boring operations.",
   },
   {
-    icon: KeyRound,
-    title: "Secrets Management",
+    icon: GitBranch,
+    title: "Evolve",
     description:
-      "Secure credential and API key storage built into the platform. Zero-config secret injection scoped per agent.",
-    to: "/platform/secrets",
+      "AI-native software changes fast — models, clients, patterns. Talva is built to absorb that change so your product can move with it.",
   },
   {
     icon: Bot,
-    title: "Client-Agnostic",
+    title: "Use",
     description:
-      "Bring any agentic client — Codex, Claude Code, OpenCode, Cursor, LangChain or your own. They all hit the same Talva backend with the same auth.",
+      "Any client — human or AI — meets your product through the same backend, with the same behaviour and the same controls.",
     to: "/platform/agent-native",
-  },
-  {
-    icon: Database,
-    title: "Bring Your Own Data",
-    description:
-      "Your data stays where it is. Talva sits in front of your existing systems — no migrations, no lock-in, no duplicated sources of truth.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Permission-Aware",
-    description:
-      "Fine-grained role-based access control at every layer. Define who — human or agent — can do what, and where.",
   },
 ];
 
@@ -85,8 +68,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Talva — Enterprise AI Agent Platform & Backend"
-        description="Talva is the enterprise AI agent platform and backend for AI agents — one consistent, secure foundation for every agent your company ships. Join the beta."
+        title="Talva — the backend layer for AI-native software"
+        description="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software. Join the beta."
         path="/"
       />
 
@@ -96,12 +79,11 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Zap className="h-6 w-6 text-primary" />
             <span className="text-lg font-bold tracking-tight text-foreground">
-              Talva
+              Talva<sup>™</sup>
             </span>
           </div>
           <div className="hidden items-center gap-6 md:flex">
-            <Link to="/platform/data-layer" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
-            
+            <Link to="/platform" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
             <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link>
           </div>
           <div className="flex items-center gap-3">
@@ -124,7 +106,6 @@ const Index = () => {
       <main>
       {/* Hero */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 pt-20 text-center">
-        {/* Glow effect */}
         <div className="pointer-events-none absolute top-1/4 left-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]" />
 
         <Badge
@@ -135,30 +116,28 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          The datastore built
+          The backend layer for
           <br />
-          <span className="text-primary">for the agent era</span>
+          <span className="text-primary">AI-native software</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Every team is shipping autonomous agents — but each one builds
-          differently. No consistency. No control. No visibility. Talva is
-          the consistency platform: build apps across your company with
-          enforced standards, full control, and enterprise security — at the
-          speed of light.
+          Talva makes it easy to build, run, evolve and use AI-native software —
+          one foundation your teams can stand on instead of assembling one from
+          scratch every time.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Button size="lg" onClick={scrollToBeta} className="gap-2">
             Request Beta Access <ArrowRight className="h-4 w-4" />
           </Button>
-          <Button size="lg" variant="outline" onClick={scrollToBeta}>
-            Learn More
+          <Button size="lg" variant="outline" asChild>
+            <Link to="/platform">Learn More</Link>
           </Button>
         </div>
       </section>
 
-      {/* Features */}
+      {/* Pillars */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="mb-16 text-center">
           <Badge
@@ -168,20 +147,18 @@ const Index = () => {
             Platform
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            One platform. Any client. Full control.
+            Build. Run. Evolve. Use.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Bring your favorite agentic client — Codex, Claude Code, OpenCode,
-            Cursor, LangChain, or your own. Talva is client-agnostic by design.
+            One backend layer for the full life of an AI-native product — not a
+            kit you reassemble every time the ground moves.
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((f) => {
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {pillars.map((f) => {
             const card = (
-              <Card
-                className="group h-full border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]"
-              >
+              <Card className="group h-full border-border/50 bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_hsl(var(--primary)/0.15)]">
                 <CardContent className="p-6">
                   <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <f.icon className="h-5 w-5 text-primary" />
@@ -207,7 +184,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Platform Highlights */}
+      {/* Positioning */}
       <section className="border-y border-border/50 bg-card/50">
         <div className="mx-auto max-w-4xl px-6 py-24">
           <Badge
@@ -217,35 +194,25 @@ const Index = () => {
             Why Talva
           </Badge>
           <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Hard tech. Lightweight touch.
+            Treat the backend as the product.
           </h2>
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Every enterprise is deploying AI agents — but most are flying
-              blind. Different agents make different decisions, data ends up
-              scattered across services you don't control, and "consistent
-              behavior" is wishful thinking. Talva changes that by giving you
-              a single platform where every agent reads from, writes to, and
-              operates on the same source of truth.
+              AI-native software has traits normal software doesn't. The clients
+              change often. Non-human callers are part of the user base. Behaviour
+              has to stay coherent while the models and tools around it shift.
             </p>
             <p>
-              Talva isn't a new database or a new agent framework — it's the
-              layer between them. You connect your existing data sources — the
-              databases, warehouses and internal APIs your company already runs
-              — and Talva exposes them as one governed API that every AI
-              agent, on any framework or model, talks to.
+              A backend that wasn't designed for those traits has to be bent into
+              shape every time one of them changes. Talva is designed for them
+              from the start — so the parts of your product that should stay
+              constant, do.
             </p>
             <p>
-              Alongside the data layer you get sandboxed WASM functions for
-              agent tool-calling, a secrets vault so credentials never leak
-              into prompts, and fine-grained permissions that let you decide
-              exactly what each agent and each person can see and do.
-            </p>
-            <p>
-              The result: your company ships agentic apps with the consistency
-              and control enterprises actually need. One API. One auth model.
-              One audit trail.
+              The client someone uses today isn't the client they'll use next
+              year. Talva makes the backend the fixed point, so what's above it
+              can move without a rewrite underneath.
             </p>
           </div>
         </div>

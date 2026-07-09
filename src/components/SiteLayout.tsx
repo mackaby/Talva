@@ -14,8 +14,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
           <div className="hidden items-center gap-6 md:flex">
-            <Link to="/platform/graph-queries" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
-            <Link to="/compare/talva-vs-langchain" className="text-sm text-muted-foreground hover:text-foreground">Compare</Link>
+            <Link to="/platform/data-layer" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
             <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link>
           </div>
           <div className="flex items-center gap-3">

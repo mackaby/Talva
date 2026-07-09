@@ -7,6 +7,7 @@ Talva focuses on being the foundation AI-native software is built on, so teams d
 ## Pages
 
 - [Home](/): Overview and beta signup.
-- [Platform](/platform): What the backend layer covers — build, run, evolve, use.
-- [Any client](/platform/agent-native): Why the client is swappable and the backend is the fixed point.
+- [Platform](/platform): What the platform covers — build, run, evolve, use.
+- [Any client](/platform/agent-native): Why the client is swappable and the platform is the fixed point.
+
 - [Blog](/blog): Perspectives on AI-native software.

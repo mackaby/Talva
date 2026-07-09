@@ -44,14 +44,14 @@ const features = [
     icon: Bot,
     title: "Client-Agnostic",
     description:
-      "Bring any agentic client — Codex, Claude Code, OpenCode, Cursor, LangChain or your own. They all hit the same Talva™ backend with the same auth.",
+      "Bring any agentic client — Codex, Claude Code, OpenCode, Cursor, LangChain or your own. They all hit the same Talva backend with the same auth.",
     to: "/platform/agent-native",
   },
   {
     icon: Database,
     title: "Bring Your Own Data",
     description:
-      "Your data stays where it is. Talva™ sits in front of your existing systems — no migrations, no lock-in, no duplicated sources of truth.",
+      "Your data stays where it is. Talva sits in front of your existing systems — no migrations, no lock-in, no duplicated sources of truth.",
   },
   {
     icon: ShieldCheck,
@@ -72,7 +72,7 @@ const Index = () => {
     setSubmitted(true);
     toast({
       title: "You're on the list! 🎉",
-      description: "We'll reach out when Talva™ beta is ready.",
+      description: "We'll reach out when Talva beta is ready.",
     });
     setName("");
     setEmail("");
@@ -85,8 +85,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Talva™ — Enterprise AI Agent Platform & Backend"
-        description="Talva™ is the enterprise AI agent platform and backend for AI agents — one consistent, secure foundation for every agent your company ships. Join the beta."
+        title="Talva — Enterprise AI Agent Platform & Backend"
+        description="Talva is the enterprise AI agent platform and backend for AI agents — one consistent, secure foundation for every agent your company ships. Join the beta."
         path="/"
       />
 
@@ -96,7 +96,7 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Zap className="h-6 w-6 text-primary" />
             <span className="text-lg font-bold tracking-tight text-foreground">
-              Talva<sup>™</sup>
+              Talva
             </span>
           </div>
           <div className="hidden items-center gap-6 md:flex">
@@ -142,7 +142,7 @@ const Index = () => {
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
           Every team is shipping autonomous agents — but each one builds
-          differently. No consistency. No control. No visibility. Talva™ is
+          differently. No consistency. No control. No visibility. Talva is
           the consistency platform: build apps across your company with
           enforced standards, full control, and enterprise security — at the
           speed of light.
@@ -172,7 +172,7 @@ const Index = () => {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Bring your favorite agentic client — Codex, Claude Code, OpenCode,
-            Cursor, LangChain, or your own. Talva™ is client-agnostic by design.
+            Cursor, LangChain, or your own. Talva is client-agnostic by design.
           </p>
         </div>
 
@@ -214,7 +214,7 @@ const Index = () => {
             variant="outline"
             className="mb-4 border-primary/30 bg-primary/10 text-primary"
           >
-            Why Talva™
+            Why Talva
           </Badge>
           <h2 className="mb-8 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Hard tech. Lightweight touch.
@@ -225,15 +225,15 @@ const Index = () => {
               Every enterprise is deploying AI agents — but most are flying
               blind. Different agents make different decisions, data ends up
               scattered across services you don't control, and "consistent
-              behavior" is wishful thinking. Talva™ changes that by giving you
+              behavior" is wishful thinking. Talva changes that by giving you
               a single platform where every agent reads from, writes to, and
               operates on the same source of truth.
             </p>
             <p>
-              Talva™ isn't a new database or a new agent framework — it's the
+              Talva isn't a new database or a new agent framework — it's the
               layer between them. You connect your existing data sources — the
               databases, warehouses and internal APIs your company already runs
-              — and Talva™ exposes them as one governed API that every AI
+              — and Talva exposes them as one governed API that every AI
               agent, on any framework or model, talks to.
             </p>
             <p>
@@ -263,7 +263,7 @@ const Index = () => {
           Get early access
         </h2>
         <p className="mb-8 text-muted-foreground">
-          We're opening Talva™ to a limited group of builders. Drop your
+          We're opening Talva to a limited group of builders. Drop your
           email and we'll be in touch.
         </p>
 
@@ -310,7 +310,7 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Zap className="h-5 w-5 text-primary" />
             <span className="font-semibold text-foreground">
-              Talva<sup>™</sup>
+              Talva
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -324,7 +324,7 @@ const Index = () => {
               GitHub
             </a>
             <p className="text-sm text-muted-foreground">
-              © 2026 Talva™. All rights reserved.
+              © 2026 Talva. All rights reserved.
             </p>
           </div>
         </div>

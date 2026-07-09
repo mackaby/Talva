@@ -24,7 +24,7 @@ export default function BlogPost() {
   return (
     <SiteLayout>
       <SeoHead
-        title={`${post.title} — Talva™`}
+        title={`${post.title} — Talva`}
         description={post.description}
         path={`/blog/${post.slug}`}
         type="article"
@@ -47,7 +47,7 @@ export default function BlogPost() {
         </div>
 
         <div className="mt-16 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
-          <h3 className="mb-3 text-xl font-bold text-foreground">Building on Talva™</h3>
+          <h3 className="mb-3 text-xl font-bold text-foreground">Building on Talva</h3>
           <p className="mb-6 text-muted-foreground">Join the private beta.</p>
           <Button asChild size="lg" className="gap-2">
             <Link to="/#beta">Request Beta Access <ArrowRight className="h-4 w-4" /></Link>

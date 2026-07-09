@@ -20,7 +20,7 @@ The root cause isn’t the models. It’s the backend. When every team wires the
 
 The fix is not "pick one model" or "standardize on one framework." Teams will always want the best model for their job, and frameworks evolve faster than any procurement cycle. The fix is to fix the backend: one datastore, one tool runtime, one permission model, one audit trail. Let the models and frameworks change; keep the ground underneath them still.
 
-That is what Talva™ is: the agent-agnostic backend that lets every team ship on their preferred stack while your data, tools and controls stay consistent.`,
+That is what Talva is: the agent-agnostic backend that lets every team ship on their preferred stack while your data, tools and controls stay consistent.`,
   },
   {
     slug: "agent-agnostic-vs-vendor-locked",
@@ -34,6 +34,6 @@ That is fine for a prototype. It is not fine when the CFO asks why the same cust
 
 Agent-agnostic infrastructure means the data, the tools, the secrets and the audit trail live in one place — outside any model vendor. Models are hot-swappable. Frameworks are hot-swappable. The backend is the fixed point.
 
-Talva™ is built on that principle. If you’re at the "we should probably think about this before it hurts" stage, you’re at the right stage.`,
+Talva is built on that principle. If you’re at the "we should probably think about this before it hurts" stage, you’re at the right stage.`,
   },
 ];

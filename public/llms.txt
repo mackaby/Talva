@@ -1,8 +1,8 @@
 # Talva
 
-> Talva™ is the enterprise AI agent platform: a unified data and API layer you connect your existing data sources to, so every AI agent your company ships works against one consistent, permissioned backend.
+> Talva is the enterprise AI agent platform: a unified data and API layer you connect your existing data sources to, so every AI agent your company ships works against one consistent, permissioned backend.
 
-Talva™ is not a database, a vector store, or an agent framework. It sits above your existing data sources — like Hasura DDN does for apps — and gives every AI agent in your company one API, one auth model, one audit trail. Bring your own AI (Claude, OpenAI, or anything else); agents are first-class users.
+Talva is not a database, a vector store, or an agent framework. It sits above your existing data sources — like Hasura DDN does for apps — and gives every AI agent in your company one API, one auth model, one audit trail. Bring your own AI (Claude, OpenAI, or anything else); agents are first-class users.
 
 ## Pages
 

@@ -73,7 +73,7 @@ export function PlatformPage(p: PlatformPageProps) {
         )}
 
         <div className="mt-16 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
-          <h3 className="mb-3 text-xl font-bold text-foreground">See Talva™ in action</h3>
+          <h3 className="mb-3 text-xl font-bold text-foreground">See Talva in action</h3>
           <p className="mb-6 text-muted-foreground">Join the private beta for early access.</p>
           <Button asChild size="lg" className="gap-2">
             <Link to="/#beta">Request Beta Access <ArrowRight className="h-4 w-4" /></Link>

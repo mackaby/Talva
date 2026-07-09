@@ -168,11 +168,11 @@ const Index = () => {
             Platform
           </Badge>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            One platform. Any agent. Full control.
+            One platform. Any client. Full control.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Connect your favorite AI — Claude, OpenAI, or anything else.
-            Talva™ is agent-agnostic by design.
+            Bring your favorite agentic client — Codex, Claude Code, OpenCode,
+            Cursor, LangChain, or your own. Talva™ is client-agnostic by design.
           </p>
         </div>
 

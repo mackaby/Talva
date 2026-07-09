@@ -8,7 +8,7 @@ export default function AgentNative() {
       path="/platform/agent-native"
       eyebrow="Platform"
       title="Client-agnostic backend for AI-native software — Talva"
-      description="Talva is the backend layer for AI-native software. Any agentic client, any team, one backend — so the product stays consistent as the tools around it change."
+      description="Talva is the platform for AI-native software. Any agentic client, any team, one backend — so the product stays consistent as the tools around it change."
       h1="Any client. One backend."
       intro="AI-native software isn't built by one client, or against one model. Teams pick the agentic client that suits them today and swap it tomorrow. Talva is the backend layer underneath — the fixed point that keeps the product coherent while everything above it changes."
       sections={[

@@ -18,7 +18,7 @@ export const posts: BlogPost[] = [
 
 It hurts because AI-native software has some traits normal software doesn't. The client changes more often. Non-human callers are part of the user base. Behaviour has to stay consistent even as the models and tools around it shift. A backend that wasn't designed for those traits has to be bent into shape every time one of them changes.
 
-The way out isn't picking a model or a framework. It's treating the backend as the fixed point — the layer that stays coherent while everything above it moves. That's what Talva is: the backend layer that makes it easy to build, run, evolve and use AI-native software.`,
+The way out isn't picking a model or a framework. It's treating the backend as the fixed point — the layer that stays coherent while everything above it moves. That's what Talva is: the platform for building, running, evolving and using AI-native software.`,
   },
   {
     slug: "agent-agnostic-vs-vendor-locked",
@@ -30,6 +30,6 @@ The way out isn't picking a model or a framework. It's treating the backend as t
 
 If your AI-native software is tied to a single client — one vendor's SDK, one framework's conventions — you are shipping something you'll have to rebuild the next time the landscape shifts. And it shifts often.
 
-The alternative is to treat the backend as the product surface, and the client as swappable. Any client — human or AI — meets the product through the same backend, with the same behaviour and the same controls. That's the design Talva is built around: the backend layer for AI-native software, whatever's on the other end of it.`,
+The alternative is to treat the backend as the product surface, and the client as swappable. Any client — human or AI — meets the product through the same backend, with the same behaviour and the same controls. That's the design Talva is built around: the platform for AI-native software, whatever's on the other end of it.`,
   },
 ];

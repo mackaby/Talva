@@ -68,8 +68,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SeoHead
-        title="Talva — the backend layer for AI-native software"
-        description="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software. Join the beta."
+        title="Talva — the platform for AI-native software"
+        description="Talva is the platform for building, running, evolving and using AI-native software. Join the beta."
         path="/"
       />
 

@@ -7,10 +7,10 @@ export default function Platform() {
       icon={Layers}
       path="/platform"
       eyebrow="Platform"
-      title="Talva — the backend layer for AI-native software"
-      description="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software."
+      title="Talva — the platform for AI-native software"
+      description="Talva is the platform for building, running, evolving and using AI-native software."
       h1="The backend layer for AI-native software"
-      intro="Talva is the backend layer that makes it easy to build, run, evolve and use AI-native software — one foundation your teams can stand on instead of assembling from scratch every time."
+      intro="Talva is the platform for building, running, evolving and using AI-native software — one foundation your teams can stand on instead of assembling from scratch every time."
       sections={[
         {
           heading: "Build",

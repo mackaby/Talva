@@ -116,16 +116,17 @@ const Index = () => {
         </Badge>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-          The backend layer for
+          The platform for
           <br />
           <span className="text-primary">AI-native software</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-          Talva makes it easy to build, run, evolve and use AI-native software —
-          one foundation your teams can stand on instead of assembling one from
-          scratch every time.
+          Talva is where AI-native software gets built, run, evolved and used —
+          one platform for the teams behind the product and the people (and
+          agents) using it.
         </p>
+
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <Button size="lg" onClick={scrollToBeta} className="gap-2">

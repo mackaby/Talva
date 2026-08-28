@@ -19,6 +19,7 @@ const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
         <Route path="/platform" element={<Platform />} />
         <Route path="/platform/agent-native" element={<AgentNative />} />
         <Route path="/blog" element={<BlogIndex />} />

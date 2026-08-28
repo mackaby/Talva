@@ -16,6 +16,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
           <div className="hidden items-center gap-6 md:flex">
             <Link to="/platform" className="text-sm text-muted-foreground hover:text-foreground">Platform</Link>
             <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link>
+            <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground">About</Link>
           </div>
           <div className="flex items-center gap-3">
             <a

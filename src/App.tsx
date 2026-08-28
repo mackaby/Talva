@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import About from "./pages/About.tsx";
 import Platform from "./pages/platform/Platform.tsx";
 import AgentNative from "./pages/platform/AgentNative.tsx";
 import BlogIndex from "./pages/blog/BlogIndex.tsx";
@@ -18,6 +19,7 @@ const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
         <Route path="/platform" element={<Platform />} />
         <Route path="/platform/agent-native" element={<AgentNative />} />
         <Route path="/blog" element={<BlogIndex />} />

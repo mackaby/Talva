@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.sw?
+
+# Lovable internal planning notes (keep private)
+.lovable/

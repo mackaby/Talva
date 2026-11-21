@@ -32,7 +32,11 @@ Key facts:
 - [All guides](https://talva.dev/blog): Guides grouped by topic and app type.
 - [Consistency in AI-built company software](https://talva.dev/topics/ai-native-software): Topic overview.
 - [Agentic clients and client independence](https://talva.dev/topics/agentic-clients): Topic overview.
+- [Vibe engineering: when everyone in the company builds apps](https://talva.dev/topics/vibe-engineering): Topic overview.
 - [AI-native software needs a platform built for it](https://talva.dev/blog/enterprise-agent-consistency)
 - [Any client, one platform](https://talva.dev/blog/agent-agnostic-vs-vendor-locked)
+- [Vibe coding vs. vibe engineering: what's the difference?](https://talva.dev/blog/vibe-coding-vs-vibe-engineering)
+- [A checklist before letting employees ship AI-built apps](https://talva.dev/blog/governing-employee-built-ai-apps)
+- [The new shadow IT: what happens when everyone can build apps](https://talva.dev/blog/shadow-it-vibe-coding-era)
 - [Glossary](https://talva.dev/glossary): Definitions of AI-native software terms.
 - [Content index](https://talva.dev/content): A complete index of every page on the site, with one-line summaries.

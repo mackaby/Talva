@@ -33,6 +33,7 @@ export const topics: Topic[] = [
       "What happens to your apps when your team changes agentic client?",
     ],
   },
+  {"slug": "vibe-engineering", "name": "Vibe engineering: when everyone in the company builds apps", "definition": "Vibe engineering is building software with AI tools at vibe-coding speed while keeping review, ownership and shared rules for data and access.", "intro": "AI tools now let employees across a company build working internal apps in an afternoon. That solves real problems and creates new ones: unowned apps, inconsistent data handling and a new kind of shadow IT. These guides cover what changes, the risks security agencies and practitioners point to, and how companies can govern it without banning it.", "questions": ["What is the difference between vibe coding and vibe engineering?", "How should a company govern apps its employees build with AI?", "How does vibe coding change shadow IT?"]},
 ];
 
 export const getTopic = (slug: string) => topics.find((t) => t.slug === slug);

@@ -15,3 +15,6 @@ dist-ssr
 
 # Lovable internal planning notes (keep private)
 .lovable/
+
+.wrangler/
+.output/

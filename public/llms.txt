@@ -1,14 +1,37 @@
 # Talva
 
-> Talva is the platform for building, running, evolving and using AI-native software.
+> Talva is the platform for building, running, evolving and using AI-native software. It gives companies one consistent foundation for the internal apps that people and AI agents build and use.
 
-Talva focuses on being the foundation AI-native software is built on, so teams don't reassemble one from scratch for every product. It's designed to stay consistent as the models, agentic clients and patterns around it keep changing.
+Key facts:
+
+- Who it is for: engineering and platform teams at companies where many people and AI agents build internal apps at the same time.
+- Problem it solves: AI-built apps each keep their own data, their own access rules and their own history. Talva keeps them consistent, controlled and secure.
+- Clients: client-agnostic. Works with the agentic client a team prefers, such as Codex, Claude Code, OpenCode or OpenClaw.
+- Users: people and AI agents are both first-class users of the same apps.
+- Data: fully owned by the company that builds on Talva.
+- Status: private beta.
+- What Talva is not: not a CRM, not a graph database, not an AI model. Those are things built on or used with Talva.
+- Not to be confused with unrelated organisations named Talva in recruiting, accounting or energy. Talva the software platform lives at talva.dev.
 
 ## Pages
 
-- [Home](/): Overview and beta signup.
-- [About Talva](/about): What Talva is, who it's for, and how to reach it.
-- [Platform](/platform): What the platform covers — build, run, evolve, use.
-- [Any client](/platform/agent-native): Why the client is swappable and the platform is the fixed point.
+- [Home](https://talva.dev/): What Talva is, the problem it solves, and beta signup.
+- [About Talva](https://talva.dev/about): Definition, audience and disambiguation.
+- [Platform overview](https://talva.dev/platform): Build, run, evolve and use.
+- [Any agentic client](https://talva.dev/platform/agent-native): Why the client is swappable and the platform is the fixed point.
 
-- [Blog](/blog): Perspectives on AI-native software.
+## Apps
+
+- [Apps you can build on Talva](https://talva.dev/apps): Overview of app types.
+- [CRM on Talva](https://talva.dev/apps/crm): A customer system people and AI agents share.
+- [Company knowledge graph on Talva](https://talva.dev/apps/knowledge-graph): Shared company context for people and agents.
+- [Internal tools on Talva](https://talva.dev/apps/internal-tools): Keeping AI-built internal tools consistent.
+
+## Guides
+
+- [All guides](https://talva.dev/blog): Guides grouped by topic and app type.
+- [Consistency in AI-built company software](https://talva.dev/topics/ai-native-software): Topic overview.
+- [Agentic clients and client independence](https://talva.dev/topics/agentic-clients): Topic overview.
+- [AI-native software needs a platform built for it](https://talva.dev/blog/enterprise-agent-consistency)
+- [Any client, one platform](https://talva.dev/blog/agent-agnostic-vs-vendor-locked)
+- [Glossary](https://talva.dev/glossary): Definitions of AI-native software terms.

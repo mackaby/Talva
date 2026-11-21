@@ -35,3 +35,4 @@ Key facts:
 - [AI-native software needs a platform built for it](https://talva.dev/blog/enterprise-agent-consistency)
 - [Any client, one platform](https://talva.dev/blog/agent-agnostic-vs-vendor-locked)
 - [Glossary](https://talva.dev/glossary): Definitions of AI-native software terms.
+- [Content index](https://talva.dev/content): A complete index of every page on the site, with one-line summaries.

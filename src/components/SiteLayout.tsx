@@ -108,6 +108,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
               </li>
             ))}
             <FooterLink to="/glossary">Glossary</FooterLink>
+            <FooterLink to="/content">Content index</FooterLink>
           </FooterColumn>
         </div>
         <div className="border-t border-border/40">
@@ -132,7 +133,7 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
   );
 }
 
-function FooterLink({ to, children }: { to: "/platform" | "/platform/agent-native" | "/about" | "/apps" | "/blog" | "/glossary"; children: React.ReactNode }) {
+function FooterLink({ to, children }: { to: "/platform" | "/platform/agent-native" | "/about" | "/apps" | "/blog" | "/glossary" | "/content"; children: React.ReactNode }) {
   return (
     <li>
       <Link to={to} className="text-sm text-muted-foreground hover:text-foreground">

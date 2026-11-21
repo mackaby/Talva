@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContentRouteImport } from './routes/content'
+import { Route as ContentPlanningRouteImport } from './routes/content-planning'
 import { Route as GlossaryRouteImport } from './routes/glossary'
 import { Route as AppsIndexRouteImport } from './routes/apps/index'
 import { Route as AppsSlugRouteImport } from './routes/apps/$slug'
@@ -34,6 +35,11 @@ const AboutRoute = AboutRouteImport.update({
 const ContentRoute = ContentRouteImport.update({
   id: '/content',
   path: '/content',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContentPlanningRoute = ContentPlanningRouteImport.update({
+  id: '/content-planning',
+  path: '/content-planning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GlossaryRoute = GlossaryRouteImport.update({
@@ -81,6 +87,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/content': typeof ContentRoute
+  '/content-planning': typeof ContentPlanningRoute
   '/glossary': typeof GlossaryRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/content': typeof ContentRoute
+  '/content-planning': typeof ContentPlanningRoute
   '/glossary': typeof GlossaryRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -108,6 +116,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/content': typeof ContentRoute
+  '/content-planning': typeof ContentPlanningRoute
   '/glossary': typeof GlossaryRoute
   '/apps/$slug': typeof AppsSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -123,6 +132,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/content'
+    | '/content-planning'
     | '/glossary'
     | '/apps/$slug'
     | '/blog/$slug'
@@ -136,6 +146,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/content'
+    | '/content-planning'
     | '/glossary'
     | '/apps/$slug'
     | '/blog/$slug'
@@ -149,6 +160,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/content'
+    | '/content-planning'
     | '/glossary'
     | '/apps/$slug'
     | '/blog/$slug'
@@ -163,6 +175,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContentRoute: typeof ContentRoute
+  ContentPlanningRoute: typeof ContentPlanningRoute
   GlossaryRoute: typeof GlossaryRoute
   AppsSlugRoute: typeof AppsSlugRoute
   BlogSlugRoute: typeof BlogSlugRoute
@@ -194,6 +207,13 @@ declare module '@tanstack/react-router' {
       path: '/content'
       fullPath: '/content'
       preLoaderRoute: typeof ContentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/content-planning': {
+      id: '/content-planning'
+      path: '/content-planning'
+      fullPath: '/content-planning'
+      preLoaderRoute: typeof ContentPlanningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/glossary': {
@@ -259,6 +279,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContentRoute: ContentRoute,
+  ContentPlanningRoute: ContentPlanningRoute,
   GlossaryRoute: GlossaryRoute,
   AppsSlugRoute: AppsSlugRoute,
   BlogSlugRoute: BlogSlugRoute,

@@ -1,0 +1,294 @@
+{
+  "generatedAt": "2026-11-21",
+  "model": "openai/gpt-6-astra",
+  "briefs": [
+    {
+      "slug": "crm",
+      "workingTitle": "Building an AI-Native CRM: When to Build, What to Keep, and How to Stay in Control",
+      "audience": "Startup founders, RevOps leaders, and technical decision-makers evaluating an AI-built internal CRM against configuring Salesforce or HubSpot or adding an AI layer to an existing CRM.",
+      "searchIntent": "Evaluate whether a custom AI-built CRM is practical, compare build-versus-configure options, and understand the operational responsibilities beyond generating code.",
+      "userQuestions": [
+        {
+          "question": "When should we build a custom CRM instead of configuring Salesforce?",
+          "sourceUrl": "https://www.reddit.com/r/PE_and_consulting/comments/1ties88/custom_crm_vs_configuring_salesforce_how_do_you/"
+        },
+        {
+          "question": "Should we keep Salesforce or HubSpot as the data layer and add an AI interface, or build our own database, accounts, and permissions?",
+          "sourceUrl": "https://www.reddit.com/r/hubspot/comments/1xhmbt1/keep_salesforcehubspot_as_the_crm_and_build_a/"
+        },
+        {
+          "question": "Does AI make a custom CRM practical, or does it just shift responsibility for security, integrations, migration, and maintenance to our team?",
+          "sourceUrl": "https://www.reddit.com/r/CRMSoftware/comments/1vbs4ze/has_anyone_here_actually_built_their_own_crm/"
+        },
+        {
+          "question": "How can we replace an established Salesforce setup with an AI-built CRM without creating a harder-to-maintain system?",
+          "sourceUrl": "https://www.reddit.com/r/revops/comments/1wxoo2g/looking_to_build_our_own_crm/"
+        },
+        {
+          "question": "What does a reliable custom CRM require beyond a database and a generated interface?",
+          "sourceUrl": "https://www.reddit.com/r/CRM/comments/1w5djnl/custom_crm_why_and_when_to_build_it/"
+        },
+        {
+          "question": "How should we compare CRM subscription costs with the time and ongoing cost of building and maintaining our own?",
+          "sourceUrl": "https://www.reddit.com/r/CRMSoftware/comments/1vbs4ze/has_anyone_here_actually_built_their_own_crm/"
+        },
+        {
+          "question": "How stable should our workflows be before we commit to building a custom CRM?",
+          "sourceUrl": "https://www.reddit.com/r/PE_and_consulting/comments/1ties88/custom_crm_vs_configuring_salesforce_how_do_you/"
+        }
+      ],
+      "hubAngle": "Treat an AI-built CRM as an operating-system decision for customer data and workflows, not just a faster coding project. Help readers choose between configuring an existing CRM, adding an AI layer, and building a custom application by assessing data-model fit, workflow stability, lifecycle cost, and operational ownership. Position Talva as the platform for AI-native software: a unified data layer for company-owned data, where internal apps are built with consistency, control, and security. Explain its client-agnostic approach, with agents and humans as first-class users, without implying verified CRM connectors, migration tools, or implementation guarantees.",
+      "plannedGuides": [
+        {
+          "title": "Custom CRM vs. Salesforce or HubSpot: Build, Configure, or Add an AI Layer?",
+          "answers": [
+            "When data-model mismatch or recurring seat costs justify investigating a custom CRM.",
+            "How to compare retaining an established CRM as the data layer with taking ownership of a new one.",
+            "Why workflow stability should be a decision gate before building."
+          ]
+        },
+        {
+          "title": "What an AI-Built CRM Needs Beyond Generated Screens",
+          "answers": [
+            "How databases, workflows, interfaces, and integrations fit together.",
+            "Why permissions, reporting, and security require explicit design and ownership.",
+            "How to distinguish a working prototype from a reliable internal application."
+          ]
+        },
+        {
+          "title": "Replacing an Established CRM Without Creating a Maintenance Problem",
+          "answers": [
+            "What to inventory across existing workflows, integrations, permissions, and reports before replacement.",
+            "Which migration and security responsibilities need named owners.",
+            "How to plan validation and ongoing maintenance rather than treating code generation as project completion."
+          ]
+        },
+        {
+          "title": "The Real Cost of an AI-Built CRM: A Lifecycle Evaluation",
+          "answers": [
+            "How to compare subscription spending with build effort and ongoing ownership costs.",
+            "Which integration, migration, security, and maintenance work belongs in an estimate.",
+            "Why a reported replacement timeline or savings figure is not a forecast for another company."
+          ]
+        }
+      ],
+      "claimsNeedingConfirmation": [
+        "The source-reported Curative replacement story, including the stated $600K annual Salesforce cost and two-month timeline, requires independent verification before publication as a factual case study.",
+        "Any claim that a custom CRM will be cheaper, faster to deliver, or more reliable than Salesforce or HubSpot requires project-specific evidence.",
+        "Any Talva-specific CRM integration, migration capability, permission mechanism, reporting feature, or security guarantee requires product confirmation before inclusion.",
+        "Any implementation example presented as a working Talva CRM must be validated; these sources establish reader concerns, not Talva implementation results."
+      ],
+      "sources": [
+        {
+          "title": "r/revops: Looking to build our own CRM",
+          "url": "https://www.reddit.com/r/revops/comments/1wxoo2g/looking_to_build_our_own_crm/"
+        },
+        {
+          "title": "r/CRMSoftware: Has anyone actually built their own CRM using AI?",
+          "url": "https://www.reddit.com/r/CRMSoftware/comments/1vbs4ze/has_anyone_here_actually_built_their_own_crm/"
+        },
+        {
+          "title": "r/hubspot: Keep Salesforce/HubSpot and build AI layer on top, or build from scratch?",
+          "url": "https://www.reddit.com/r/hubspot/comments/1xhmbt1/keep_salesforcehubspot_as_the_crm_and_build_a/"
+        },
+        {
+          "title": "r/CRM: Custom CRM - why and when to build it",
+          "url": "https://www.reddit.com/r/CRM/comments/1w5djnl/custom_crm_why_and_when_to_build_it/"
+        },
+        {
+          "title": "r/PE_and_consulting: custom crm vs configuring salesforce",
+          "url": "https://www.reddit.com/r/PE_and_consulting/comments/1ties88/custom_crm_vs_configuring_salesforce_how_do_you/"
+        }
+      ]
+    },
+    {
+      "slug": "knowledge-graph",
+      "workingTitle": "Enterprise Knowledge Graph Apps for Humans and AI Agents",
+      "audience": "Engineering leaders, platform teams and internal-app builders evaluating knowledge graph apps that connect company data for human and agent use.",
+      "searchIntent": "Understand when an enterprise knowledge graph is useful and how to design a dependable internal app around connected entities, governed source data and relationship-based queries.",
+      "userQuestions": [
+        {
+          "question": "Which questions need an entity graph rather than document retrieval?",
+          "sourceUrl": "https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-entity-graph"
+        },
+        {
+          "question": "How should teams define entities, relationships and an ontology before ingesting enterprise data?",
+          "sourceUrl": "https://www.tigergraph.com/blog/how-to-build-knowledge-graph-with-llms-for-enterprise-ai/"
+        },
+        {
+          "question": "How do identifiers and entity resolution connect records about the same entity?",
+          "sourceUrl": "https://www.tigergraph.com/blog/how-to-build-knowledge-graph-with-llms-for-enterprise-ai/"
+        },
+        {
+          "question": "How should a governed knowledge graph pipeline preserve access rules and links to source records?",
+          "sourceUrl": "https://sekin.in/how-to-build-a-knowledge-graph-for-ai-agents-from-enterprise-data/"
+        },
+        {
+          "question": "How should a company knowledge graph represent when a fact was true?",
+          "sourceUrl": "https://pensieve.uk/articles/knowledge-graph-company-brain"
+        },
+        {
+          "question": "Why is a knowledge graph not a complete retrieval system, and what else must teams design?",
+          "sourceUrl": "https://sekin.in/how-to-build-a-knowledge-graph-for-ai-agents-from-enterprise-data/"
+        },
+        {
+          "question": "What separates a knowledge graph demo from a dependable company-brain system, and how do GraphRAG and Graphiti variants fit?",
+          "sourceUrl": "https://pensieve.uk/articles/knowledge-graph-company-brain"
+        }
+      ],
+      "hubAngle": "Frame the knowledge graph as an internal-app type for exploring company entities and answering questions that depend on their connections—not as a standalone graph database or a complete retrieval solution. Organize the hub around modeling, source provenance, access rules, temporal facts and retrieval boundaries. Position Talva as the platform for AI-native software: a unified data layer where companies build internal apps with consistency, control and security, retain ownership of their data, and treat agents and humans as first-class users. Keep the build approach client-agnostic, without implying native graph storage, graph querying or packaged GraphRAG capabilities.",
+      "plannedGuides": [
+        {
+          "title": "When to Build a Knowledge Graph App Instead of Relying on Document Retrieval",
+          "answers": [
+            "Which questions depend on connections between entities?",
+            "What role does an ontology play in answering relationship-based questions?",
+            "Why is the graph only one part of a retrieval system?"
+          ]
+        },
+        {
+          "title": "Design the Graph Before Ingestion: Entities, Relationships and Identity",
+          "answers": [
+            "How should teams define a schema before ingesting enterprise data?",
+            "How should identifiers and entity resolution connect records about the same entity?",
+            "How can graph entities remain linked to their source records?"
+          ]
+        },
+        {
+          "title": "Plan a Governed Knowledge Graph Pipeline",
+          "answers": [
+            "Where should access rules enter the graph design and pipeline?",
+            "Why must provenance remain linked to source records?",
+            "Why should teams design relationship traversal and authorization explicitly rather than assume vector search provides them?"
+          ]
+        },
+        {
+          "title": "From Company-Brain Demo to Dependable App: Time and Retrieval",
+          "answers": [
+            "How should the graph represent when a fact was true?",
+            "What makes a dependable system harder to build than a demo?",
+            "How do GraphRAG and Graphiti variants fit into the broader design?"
+          ]
+        }
+      ],
+      "claimsNeedingConfirmation": [
+        "Whether Talva provides native graph storage, ontology management or relationship-traversal query capabilities.",
+        "How a Talva-based app would enforce access rules across source records, graph relationships and retrieved answers.",
+        "Whether Talva supplies any built-in ingestion, entity-resolution, provenance or temporal-fact capabilities.",
+        "Whether any GraphRAG or Graphiti implementation is supported or documented for use with Talva.",
+        "Any Talva-specific implementation instructions or code examples beyond its established unified-data-layer and client-agnostic positioning."
+      ],
+      "sources": [
+        {
+          "title": "Sekin: Build an Enterprise Knowledge Graph for AI Agents",
+          "url": "https://sekin.in/how-to-build-a-knowledge-graph-for-ai-agents-from-enterprise-data/"
+        },
+        {
+          "title": "Pensieve: A knowledge graph as a company brain",
+          "url": "https://pensieve.uk/articles/knowledge-graph-company-brain"
+        },
+        {
+          "title": "TigerGraph: How to Build a Knowledge Graph with LLMs",
+          "url": "https://www.tigergraph.com/blog/how-to-build-knowledge-graph-with-llms-for-enterprise-ai/"
+        },
+        {
+          "title": "Microsoft Learn: Create and query an entity graph",
+          "url": "https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-how-to-entity-graph"
+        }
+      ]
+    },
+    {
+      "slug": "internal-tools",
+      "workingTitle": "AI-Built Internal Tools: From Staff Experiments to Governed Apps",
+      "audience": "IT, security and engineering leaders overseeing AI-built internal tools, alongside operations teams and staff building apps for their own workflows.",
+      "searchIntent": "Learn how to introduce, govern and maintain AI-built internal tools without blocking useful staff experimentation or bypassing security review.",
+      "userQuestions": [
+        {
+          "question": "What security checks should we put in place before staff start vibe coding internal tools?",
+          "sourceUrl": "https://www.cyber.gc.ca/en/guidance/managing-security-risks-vibe-coding-itsm60043"
+        },
+        {
+          "question": "How should we review AI-generated internal tools for code, software supply-chain and information-leak risks?",
+          "sourceUrl": "https://www.cyber.gc.ca/en/guidance/managing-security-risks-vibe-coding-itsm60043"
+        },
+        {
+          "question": "How can IT govern a growing number of staff-built AI apps without banning them or letting them bypass QA?",
+          "sourceUrl": "https://www.tenable.com/blog/how-to-secure-mitigate-ai-risk-vibe-coding-ai-apps-citizen-coders"
+        },
+        {
+          "question": "What governance gaps should we check for in citizen-built internal apps, especially missing access policies?",
+          "sourceUrl": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/06/CSA_research_note_vibe_coding_ai_governance_gap_20260602-csa-styled.pdf"
+        },
+        {
+          "question": "What rules should cover approved AI tools and where staff-built apps put company data?",
+          "sourceUrl": "https://talkthinkdo.com/guides/ai-and-code/governing-software-staff-build-with-ai/"
+        },
+        {
+          "question": "How should we keep a register of staff-built internal tools and decide when they need formal review and ownership?",
+          "sourceUrl": "https://talkthinkdo.com/guides/ai-and-code/governing-software-staff-build-with-ai/"
+        },
+        {
+          "question": "How do we reduce dependence on a single employee when their AI-built tool becomes important to the business?",
+          "sourceUrl": "https://talkthinkdo.com/guides/ai-and-code/governing-software-staff-build-with-ai/"
+        }
+      ],
+      "hubAngle": "Build a practical hub for the lifecycle of AI-built internal tools: establish boundaries for experimentation, review apps before broader use, and assign ownership as teams come to depend on them. Position Talva as the platform for AI-native software, with a unified data layer for building internal apps with consistency, control and security. Explain its client-agnostic approach, with agents and humans as first-class users and company-owned data. Keep this architectural positioning distinct from specific governance or security capabilities that require confirmation.",
+      "plannedGuides": [
+        {
+          "title": "Before Staff Build with AI: Set Rules for Internal Tools and Company Data",
+          "answers": [
+            "What security checks should we put in place before staff start vibe coding internal tools?",
+            "What rules should cover approved AI tools and where staff-built apps put company data?"
+          ]
+        },
+        {
+          "title": "Reviewing AI-Built Internal Tools: Code, Dependencies and Access Policies",
+          "answers": [
+            "How should we review AI-generated internal tools for code, software supply-chain and information-leak risks?",
+            "What governance gaps should we check for in citizen-built internal apps, especially missing access policies?"
+          ]
+        },
+        {
+          "title": "Govern Staff-Built AI Apps Without Banning Them",
+          "answers": [
+            "How can IT govern a growing number of staff-built AI apps without banning them or letting them bypass QA?",
+            "How should we keep a register of staff-built internal tools and decide when they need formal review and ownership?"
+          ]
+        },
+        {
+          "title": "When an Internal Tool Becomes Business-Critical: Review, Ownership and Handover",
+          "answers": [
+            "How should we keep a register of staff-built internal tools and decide when they need formal review and ownership?",
+            "How do we reduce dependence on a single employee when their AI-built tool becomes important to the business?"
+          ]
+        }
+      ],
+      "claimsNeedingConfirmation": [
+        "Any assertion that Talva automatically enforces access policies or provides specific identity, permission or audit capabilities.",
+        "Any assertion that Talva provides app inventories, approval workflows, code review or dependency scanning.",
+        "Any specific claim about Talva data storage locations, residency, retention or deployment arrangements beyond company ownership of data.",
+        "Any claim that using Talva eliminates information leaks, governance gaps or dependence on a single maintainer.",
+        "The scope, methodology and exact findings of the CSA scans before describing how widespread missing access policies are.",
+        "Any specific integrations, pricing, customer examples or quantified outcomes attributed to Talva."
+      ],
+      "sources": [
+        {
+          "title": "Canadian Centre for Cyber Security: Managing security risks in vibe coding",
+          "url": "https://www.cyber.gc.ca/en/guidance/managing-security-risks-vibe-coding-itsm60043"
+        },
+        {
+          "title": "Tenable: Mitigate risk from AI-generated apps by citizen coders",
+          "url": "https://www.tenable.com/blog/how-to-secure-mitigate-ai-risk-vibe-coding-ai-apps-citizen-coders"
+        },
+        {
+          "title": "Cloud Security Alliance: The Vibe Coding Governance Gap",
+          "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/06/CSA_research_note_vibe_coding_ai_governance_gap_20260602-csa-styled.pdf"
+        },
+        {
+          "title": "Talk Think Do: Governing Software Your Staff Build with AI",
+          "url": "https://talkthinkdo.com/guides/ai-and-code/governing-software-staff-build-with-ai/"
+        }
+      ]
+    }
+  ]
+}

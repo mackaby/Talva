@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { apps } from "@/content/apps";
+import { apps, appUseCases, getApp } from "@/content/apps";
 import { articles, getArticle, relatedArticles } from "@/content/articles";
 import { vibeResearch } from "@/content/question-research";
 import { topics } from "@/content/topics";
@@ -10,6 +10,14 @@ const sitemap = readFileSync(resolve(__dirname, "../../public/sitemap.xml"), "ut
 const llms = readFileSync(resolve(__dirname, "../../public/llms.txt"), "utf8");
 
 describe("content structure", () => {
+  it("keeps CRM as an app example rather than a peer-level use case", () => {
+    expect(getApp("crm")?.level).toBe("example");
+    expect(appUseCases.map((app) => app.slug)).toEqual([
+      "knowledge-graph", "internal-tools", "legacy-modernization", "semantic-access-layer",
+    ]);
+    expect(getApp("internal-tools")?.level).toBe("use-case");
+  });
+
   it("keeps the vibe-engineering supporting guides in their own cluster", () => {
     const article = getArticle("governing-employee-built-ai-apps");
     if (!article) throw new Error("Missing governance guide");

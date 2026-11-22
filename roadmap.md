@@ -1,5 +1,7 @@
 # Roadmap
 
+- [x] Reframe app categories around large-scale internal apps, legacy modernization, knowledge graphs and semantic access; keep CRM as an example.
+
 - [x] Define a small, repeatable content structure starting with one topic cluster.
 - [x] Provide an initial editorial backlog and expansion criteria.
 - [x] Make every page readable without JavaScript (server rendering) with its own title and canonical link.

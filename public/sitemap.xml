@@ -8,6 +8,8 @@
   <url><loc>https://talva.dev/apps/crm</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://talva.dev/apps/knowledge-graph</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://talva.dev/apps/internal-tools</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://talva.dev/apps/legacy-modernization</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://talva.dev/apps/semantic-access-layer</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://talva.dev/topics/ai-native-software</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://talva.dev/topics/agentic-clients</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://talva.dev/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

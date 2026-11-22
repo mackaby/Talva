@@ -62,11 +62,11 @@ function ContentIndex() {
           </section>
 
           <section>
-            <h2 className="mb-5 text-xl font-bold text-foreground">Apps you can build</h2>
+            <h2 className="mb-5 text-xl font-bold text-foreground">Use cases and app examples</h2>
             <ul className="space-y-4">
               <li>
-                <IndexLink to="/apps">All app types</IndexLink>
-                <p className="mt-1 text-sm text-muted-foreground">Overview of the kinds of internal apps teams build on Talva.</p>
+                <IndexLink to="/apps">All use cases</IndexLink>
+                <p className="mt-1 text-sm text-muted-foreground">Company apps, legacy modernization, knowledge graphs and semantic access to existing databases.</p>
               </li>
               {apps.map((a) => (
                 <li key={a.slug}>

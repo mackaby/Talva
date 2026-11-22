@@ -3,6 +3,7 @@ import type { FaqItem } from "./site";
 // App landing pages. Each app is also the hub of a content cluster: articles point at it via `cluster`.
 export interface AppType {
   slug: string;
+  level: "use-case" | "example";
   name: string;
   /** Short label used in navigation and cards. */
   label: string;
@@ -25,6 +26,7 @@ export interface AppType {
 export const apps: AppType[] = [
   {
     slug: "crm",
+    level: "example",
     name: "CRM on Talva",
     label: "CRM",
     noun: "CRM",
@@ -78,6 +80,7 @@ export const apps: AppType[] = [
   },
   {
     slug: "knowledge-graph",
+    level: "use-case",
     name: "Company knowledge graph on Talva",
     label: "Knowledge graph",
     noun: "company knowledge graph",
@@ -127,19 +130,20 @@ export const apps: AppType[] = [
   },
   {
     slug: "internal-tools",
-    name: "Internal tools on Talva",
-    label: "Internal tools",
-    noun: "internal tools",
-    question: "What are internal tools?",
+    level: "use-case",
+    name: "Large-scale internal apps on Talva",
+    label: "Large-scale internal apps",
+    noun: "internal company apps",
+    question: "What are internal company apps?",
     definition:
-      "Internal tools are the apps employees use to run the company: request forms, approval flows, inventories, dashboards and admin panels.",
+      "Internal company apps are the systems a business runs on, from a CRM to digital asset management (DAM), with shared data and workflows for people and AI agents.",
     pitch:
-      "AI makes it possible for almost anyone to build an internal tool in an afternoon. Talva is the shared platform that keeps those tools consistent, controlled and secure as their number grows.",
+      "This is more than building small tools and dashboards. Talva provides a consistent foundation for large-scale company apps, so teams and agents do not create a different data model and access approach for every system.",
     examples: [
-      "Purchase and access request flows",
-      "Equipment and licence inventories",
-      "Team dashboards that pull from several systems",
-      "Small admin apps built by one team for another",
+      "A company CRM for customers, contacts and deals",
+      "Digital asset management (DAM) for company media and assets",
+      "Operational systems spanning several teams and workflows",
+      "Connected company apps that share data and access rules",
     ],
     humans: [
       "Submit and approve requests",
@@ -165,8 +169,8 @@ export const apps: AppType[] = [
     ],
     faq: [
       {
-        q: "Who can build internal tools on Talva?",
-        a: "Engineering teams, and the AI agents they work with. Talva is designed for companies where many internal apps are being built at once, often with AI.",
+        q: "Does internal apps mean only small tools and dashboards?",
+        a: "No. It includes large-scale company systems such as a CRM or digital asset management (DAM). Small tools can be part of that environment, but they are not the limit of the use case.",
       },
       {
         q: "Does Talva replace low-code tools?",
@@ -174,6 +178,57 @@ export const apps: AppType[] = [
       },
     ],
   },
+  {
+    slug: "legacy-modernization",
+    level: "use-case",
+    name: "Legacy app modernization on Talva",
+    label: "Legacy app modernization",
+    noun: "modernized company apps",
+    question: "What is legacy app modernization?",
+    definition: "Legacy app modernization means refactoring an existing company application, including an entire legacy system, rather than limiting new development to small tools around it.",
+    pitch: "Talva can be the foundation for refactoring entire legacy apps for people and AI agents. Your team still decides what to preserve, how to move data and workflows, and how to validate the replacement.",
+    examples: [
+      "Refactoring an entire legacy company application",
+      "Rebuilding an existing CRM or asset management system",
+      "Bringing previously separate company apps onto a consistent foundation",
+      "Adapting established workflows for use by people and agents",
+    ],
+    humans: ["Decide which workflows and business rules must remain", "Review migrated data and validate the refactored app", "Plan rollout, ownership and ongoing maintenance"],
+    agents: ["Help refactor application code under team review", "Use the modernized app as a first-class user", "Work with shared company context rather than a separate copy per tool"],
+    consistency: ["Shared definitions for business data", "Explicit access rules for people and agents", "Business rules preserved and tested during the transition", "Company ownership of its data"],
+    questions: ["Which parts of the existing app must remain unchanged?", "How will you validate migrated data and business rules?", "Will you replace the whole app or transition in stages?", "Who owns rollout and recovery if the transition fails?"],
+    faq: [
+      { q: "Can Talva be used to refactor an entire legacy app?", a: "Yes. Entire legacy-app refactoring is a Talva use case, not just building new tools beside an old system. Your team remains responsible for migration planning, review and validation." },
+      { q: "Does modernization mean every database must be replaced?", a: "Not necessarily. Talva can also serve as a semantic access layer over existing databases. Refactoring an app and exposing controlled access to existing data are distinct approaches." },
+    ],
+  },
+  {
+    slug: "semantic-access-layer",
+    level: "use-case",
+    name: "Semantic access layer on Talva",
+    label: "Semantic access layer",
+    noun: "semantic access layer",
+    question: "What is a semantic access layer?",
+    definition: "A semantic access layer gives agents a meaningful, controlled way to work with data in existing databases. Talva provides this layer with controlled MCP (Model Context Protocol) access and granular control.",
+    pitch: "You do not have to start with a new app or replace your databases. Use Talva above existing databases to give agents controlled access to company data, while your team defines what that access should allow.",
+    examples: [
+      "A semantic access layer over existing company databases",
+      "Controlled MCP access for company agents",
+      "Granular control over the access agents receive",
+      "Shared business meaning for data consumed by different agents",
+    ],
+    humans: ["Define the business meaning of the data exposed", "Decide what each agent should be allowed to access", "Review access requirements as workflows change"],
+    agents: ["Access existing company data through controlled MCP access", "Work with the business meaning provided by the semantic layer", "Use the access granted to them rather than unrestricted database access"],
+    consistency: ["Shared business definitions above existing databases", "Explicit, granular control of agent access", "A consistent access approach across different agents", "Company ownership of the underlying data"],
+    questions: ["Which existing databases and business concepts should be exposed?", "What should each agent be allowed to access?", "Which actions should still require human review?", "Who maintains the semantic definitions and access rules?"],
+    faq: [
+      { q: "Can Talva work above existing databases?", a: "Yes. Talva can act as a semantic access layer on top of existing databases, providing controlled MCP access to agents with granular control." },
+      { q: "Is a semantic access layer the same as building a new app?", a: "No. It is a way to give agents controlled access to existing data. Building or refactoring company apps is another Talva use case." },
+      { q: "Does MCP alone determine what an agent may access?", a: "No. MCP is the access protocol; your company still needs to define the semantic model and the access rules. Talva's semantic-layer use case includes granular control." },
+    ],
+  },
 ];
+
+export const appUseCases = apps.filter((app) => app.level === "use-case");
 
 export const getApp = (slug: string) => apps.find((a) => a.slug === slug);

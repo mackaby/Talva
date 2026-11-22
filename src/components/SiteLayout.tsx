@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { apps } from "@/content/apps";
+import { appUseCases } from "@/content/apps";
 import { topics } from "@/content/topics";
 import { GITHUB_URL, talva } from "@/content/site";
 
@@ -89,8 +89,8 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
             <FooterLink to="/about">About Talva</FooterLink>
           </FooterColumn>
           <FooterColumn title="Apps">
-            <FooterLink to="/apps">All app types</FooterLink>
-            {apps.map((a) => (
+            <FooterLink to="/apps">All use cases</FooterLink>
+            {appUseCases.map((a) => (
               <li key={a.slug}>
                 <Link to="/apps/$slug" params={{ slug: a.slug }} className="text-sm text-muted-foreground hover:text-foreground">
                   {a.label}

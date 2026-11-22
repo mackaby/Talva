@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SiteLayout } from "@/components/SiteLayout";
 import { BetaForm } from "@/components/BetaForm";
 import { Eyebrow, FaqList, formatDate } from "@/components/content";
-import { apps } from "@/content/apps";
+import { appUseCases } from "@/content/apps";
 import { articles } from "@/content/articles";
 import { talva } from "@/content/site";
 import { faqLd, pageHead } from "@/lib/seo";
@@ -126,9 +126,9 @@ function Home() {
       {/* Apps */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Eyebrow>What you can build</Eyebrow>
-        <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Company apps that people and agents share</h2>
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {apps.map((a) => (
+        <h2 className="text-3xl font-bold text-foreground sm:text-4xl">Build, modernize and connect company systems</h2>
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
+          {appUseCases.map((a) => (
             <Link
               key={a.slug}
               to="/apps/$slug"

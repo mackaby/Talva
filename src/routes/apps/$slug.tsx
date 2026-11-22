@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { ArticleCard } from "@/components/ArticleCard";
 import { AnswerBox, BetaCta, Breadcrumbs, Eyebrow, FaqList } from "@/components/content";
-import { apps, getApp } from "@/content/apps";
+import { appUseCases, getApp } from "@/content/apps";
 import { articlesInCluster } from "@/content/articles";
 import { breadcrumbLd, faqLd, pageHead } from "@/lib/seo";
 
@@ -17,8 +17,8 @@ export const Route = createFileRoute("/apps/$slug")({
     if (!loaderData) return {};
     const { app } = loaderData;
     return pageHead({
-      title: `${app.name} — ${app.noun} for people and AI agents`,
-      description: `${app.definition} How to build one on Talva so people and AI agents use the same data, controls and history.`,
+      title: `${app.name} — for people and AI agents`,
+      description: `${app.definition} ${app.pitch}`,
       path: `/apps/${app.slug}`,
       jsonLd: [
         breadcrumbLd([{ name: "Home", path: "/" }, { name: "Apps", path: "/apps" }, { name: app.label, path: `/apps/${app.slug}` }]),
@@ -45,12 +45,12 @@ function List({ items }: { items: string[] }) {
 function AppPage() {
   const { app } = Route.useLoaderData();
   const guides = articlesInCluster(app.slug);
-  const others = apps.filter((a) => a.slug !== app.slug);
+  const others = appUseCases.filter((a) => a.slug !== app.slug);
   return (
     <SiteLayout>
       <article className="mx-auto max-w-3xl px-6 py-16">
         <Breadcrumbs items={[{ name: "Home", to: "/" }, { name: "Apps", to: "/apps" }, { name: app.label }]} />
-        <Eyebrow>App type · {app.label}</Eyebrow>
+        <Eyebrow>{app.level === "example" ? "App example" : "Use case"} · {app.label}</Eyebrow>
         <h1 className="mb-8 text-4xl font-bold text-foreground sm:text-5xl">{app.name}</h1>
         <AnswerBox label={app.question}>{app.definition}</AnswerBox>
         <p className="mt-8 text-lg leading-relaxed text-muted-foreground">{app.pitch}</p>
@@ -58,6 +58,16 @@ function AppPage() {
         <section className="mt-14">
           <h2 className="mb-5 text-2xl font-bold text-foreground">What teams build</h2>
           <List items={app.examples} />
+          {app.slug === "internal-tools" && (
+            <p className="mt-5 text-sm text-muted-foreground">
+              Explore an example: <Link to="/apps/$slug" params={{ slug: "crm" }} className="text-primary hover:underline">CRM on Talva</Link>.
+            </p>
+          )}
+          {app.level === "example" && (
+            <p className="mt-5 text-sm text-muted-foreground">
+              Part of <Link to="/apps/$slug" params={{ slug: "internal-tools" }} className="text-primary hover:underline">large-scale internal apps</Link>, alongside systems such as digital asset management (DAM).
+            </p>
+          )}
         </section>
 
         <section className="mt-14 grid gap-6 sm:grid-cols-2">
@@ -97,7 +107,7 @@ function AppPage() {
         <FaqList faq={app.faq} />
 
         <section className="mt-16">
-          <h2 className="mb-4 text-lg font-semibold text-foreground">Other apps on Talva</h2>
+          <h2 className="mb-4 text-lg font-semibold text-foreground">Other Talva use cases</h2>
           <div className="flex flex-wrap gap-3">
             {others.map((o) => (
               <Link key={o.slug} to="/apps/$slug" params={{ slug: o.slug }} className="rounded-md border border-border/60 px-4 py-2 text-sm text-foreground hover:border-primary/40">

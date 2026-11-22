@@ -1,8 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { Eyebrow } from "@/components/content";
 import { pageHead } from "@/lib/seo";
 import data from "@/content/briefs.json";
+import { vibeResearch } from "@/content/question-research";
 
 type Brief = {
   slug: string;
@@ -24,7 +25,7 @@ export const Route = createFileRoute("/content-planning")({
       description: "Internal draft briefs for upcoming Talva app-type content clusters, based on real user questions and sources.",
       path: "/content-planning",
     });
-    return { ...h, meta: [...h.meta, { name: "robots", content: "noindex, nofollow" }, { name: "twitter:card", content: "summary" }] };
+    return { ...h, meta: [...h.meta, { name: "robots", content: "noindex, nofollow" }] };
   },
   component: ContentPlanning,
 });
@@ -38,6 +39,20 @@ function ContentPlanning() {
         <p className="mb-12 text-muted-foreground">
           AI-drafted ({data.model}, {data.generatedAt}) from real user questions and credible sources. Review every claim before writing. Not indexed by search engines.
         </p>
+        <section className="mb-16 border-y border-border py-8" aria-labelledby="question-research">
+          <p className="mb-2 font-mono text-xs text-primary">Reviewed {vibeResearch.reviewed}</p>
+          <h2 id="question-research" className="mb-4 text-2xl font-bold text-foreground">Real questions: {vibeResearch.scope}</h2>
+          <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{vibeResearch.evidence}</p>
+          <div className="space-y-6">
+            {vibeResearch.groups.map((group) => <div key={group.guide}>
+              <h3 className="mb-2 font-semibold text-foreground">{group.intent}</h3>
+              <a href={group.source} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{group.question}</a>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{group.coverage}</p>
+              <Link to="/blog/$slug" params={{ slug: group.guide }} className="mt-2 inline-block text-sm text-primary hover:underline">Read the expanded guide →</Link>
+            </div>)}
+          </div>
+          <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{vibeResearch.limitations}</p>
+        </section>
         <div className="space-y-12">
           {briefs.map((b) => (
             <article key={b.slug} className="rounded-xl border border-border bg-card p-8">

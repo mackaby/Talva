@@ -3,7 +3,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { ArticleCard } from "@/components/ArticleCard";
 import { AnswerBox, BetaCta, Breadcrumbs, FaqList, formatDate } from "@/components/content";
 import { getApp } from "@/content/apps";
-import { articles, getArticle } from "@/content/articles";
+import { getArticle, relatedArticles } from "@/content/articles";
 import { SITE_URL } from "@/content/site";
 import { getTopic } from "@/content/topics";
 import { breadcrumbLd, faqLd, pageHead } from "@/lib/seo";
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/blog/$slug")({
 function ArticlePage() {
   const { article } = Route.useLoaderData();
   const cluster = clusterOf(article.cluster);
-  const related = articles.filter((a) => a.slug !== article.slug).slice(0, 2);
+  const related = relatedArticles(article);
 
   return (
     <SiteLayout>
@@ -91,6 +91,7 @@ function ArticlePage() {
               <h2>{s.heading}</h2>
               {s.paragraphs.map((p) => <p key={p}>{p}</p>)}
               {s.bullets && <ul>{s.bullets.map((b) => <li key={b}>{b}</li>)}</ul>}
+              {s.sources && <p className="text-sm">Sources: {s.sources.map((source, index) => <span key={source.url}>{index > 0 && " · "}<a href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a></span>)}</p>}
             </section>
           ))}
         </div>

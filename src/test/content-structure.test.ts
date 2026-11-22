@@ -2,13 +2,30 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { apps } from "@/content/apps";
-import { articles } from "@/content/articles";
+import { articles, getArticle, relatedArticles } from "@/content/articles";
+import { vibeResearch } from "@/content/question-research";
 import { topics } from "@/content/topics";
 
 const sitemap = readFileSync(resolve(__dirname, "../../public/sitemap.xml"), "utf8");
 const llms = readFileSync(resolve(__dirname, "../../public/llms.txt"), "utf8");
 
 describe("content structure", () => {
+  it("keeps the vibe-engineering supporting guides in their own cluster", () => {
+    const article = getArticle("governing-employee-built-ai-apps");
+    if (!article) throw new Error("Missing governance guide");
+    expect(relatedArticles(article).map((a) => a.slug)).toEqual([
+      "vibe-coding-vs-vibe-engineering",
+      "shadow-it-vibe-coding-era",
+    ]);
+  });
+
+  it("resolves researched questions to existing vibe-engineering guides", () => {
+    for (const group of vibeResearch.groups) {
+      expect(getArticle(group.guide)?.cluster).toBe("vibe-engineering");
+      expect(new URL(group.source).protocol).toBe("https:");
+    }
+  });
+
   it("assigns every article to an existing app or topic cluster", () => {
     const clusters = new Set([...apps.map((a) => a.slug), ...topics.map((t) => t.slug)]);
     for (const a of articles) expect(clusters.has(a.cluster), a.slug).toBe(true);

@@ -95,6 +95,21 @@ function ArticlePage() {
           ))}
         </div>
 
+        <section className="prose-talva mt-12" aria-labelledby="talva-fit">
+          <h2 id="talva-fit">Where Talva fits</h2>
+          {article.talvaFit.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <h3>What your company still owns</h3>
+          <p>{article.talvaFit.responsibility}</p>
+          <ul>
+            {article.talvaFit.appSlugs.map((slug) => {
+              const app = getApp(slug);
+              if (!app) return null;
+              return <li key={slug}><Link to="/apps/$slug" params={{ slug }}>{app.name}</Link></li>;
+            })}
+          </ul>
+          <p><Link to="/platform">Explore the Talva platform</Link></p>
+        </section>
+
         <FaqList faq={article.faq} />
 
         {article.sources.length > 0 && (

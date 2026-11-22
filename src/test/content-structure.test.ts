@@ -23,6 +23,16 @@ describe("content structure", () => {
     for (const p of paths) expect(sitemap).toContain(`<loc>https://talva.dev${p}</loc>`);
   });
 
+  it("resolves every guide's product connection to an existing app page", () => {
+    const appSlugs = new Set(apps.map((app) => app.slug));
+    for (const article of articles) {
+      expect(article.talvaFit.appSlugs.length, article.slug).toBeGreaterThan(0);
+      for (const slug of article.talvaFit.appSlugs) {
+        expect(appSlugs.has(slug), `${article.slug}: ${slug}`).toBe(true);
+      }
+    }
+  });
+
   it("lists every app and article page in llms.txt", () => {
     for (const a of apps) expect(llms).toContain(`https://talva.dev/apps/${a.slug}`);
     for (const a of articles) expect(llms).toContain(`https://talva.dev/blog/${a.slug}`);

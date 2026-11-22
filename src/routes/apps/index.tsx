@@ -10,7 +10,7 @@ export const Route = createFileRoute("/apps/")({
   head: () =>
     pageHead({
       title: "Talva use cases — company apps, legacy modernization and semantic access",
-      description: "Build large-scale internal apps, refactor legacy systems, build company knowledge graphs or give agents controlled MCP access to existing databases with Talva.",
+      description: "Build small or large internal apps, refactor legacy systems, build company knowledge graphs or give agents controlled MCP access to existing databases with Talva.",
       path: "/apps",
       jsonLd: [
         breadcrumbLd([{ name: "Home", path: "/" }, { name: "Apps", path: "/apps" }]),
@@ -33,7 +33,7 @@ function AppsIndex() {
         <h1 className="mb-8 max-w-3xl text-4xl font-bold text-foreground sm:text-5xl">What you can build with Talva</h1>
         <div className="max-w-3xl">
           <AnswerBox label="In short">
-            Build large-scale company apps, refactor entire legacy systems, connect company knowledge or give agents
+            Build company apps of any size, refactor entire legacy systems, connect company knowledge or give agents
             controlled access to existing databases. Talva provides a consistent foundation for people and AI agents.
           </AnswerBox>
         </div>

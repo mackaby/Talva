@@ -131,17 +131,18 @@ export const apps: AppType[] = [
   {
     slug: "internal-tools",
     level: "use-case",
-    name: "Large-scale internal apps on Talva",
-    label: "Large-scale internal apps",
+    name: "Internal company apps on Talva",
+    label: "Internal company apps",
     noun: "internal company apps",
     question: "What are internal company apps?",
     definition:
-      "Internal company apps are the systems a business runs on, from a CRM to digital asset management (DAM), with shared data and workflows for people and AI agents.",
+      "Internal company apps are the small tools and larger systems a business runs on, from a request form or dashboard to a CRM or digital asset management (DAM), used by people and AI agents.",
     pitch:
-      "This is more than building small tools and dashboards. Talva provides a consistent foundation for large-scale company apps, so teams and agents do not create a different data model and access approach for every system.",
+      "Build a small tool for one team or a larger system for the whole company. Talva provides a consistent foundation for both, so teams and agents do not create a different data model and access approach for every app.",
     examples: [
       "A company CRM for customers, contacts and deals",
       "Digital asset management (DAM) for company media and assets",
+      "Small request forms, approval tools and team dashboards",
       "Operational systems spanning several teams and workflows",
       "Connected company apps that share data and access rules",
     ],
@@ -170,7 +171,7 @@ export const apps: AppType[] = [
     faq: [
       {
         q: "Does internal apps mean only small tools and dashboards?",
-        a: "No. It includes large-scale company systems such as a CRM or digital asset management (DAM). Small tools can be part of that environment, but they are not the limit of the use case.",
+        a: "No. Internal apps can be small or large, from a request form or team dashboard to a company CRM or digital asset management (DAM). Talva is a foundation for both.",
       },
       {
         q: "Does Talva replace low-code tools?",

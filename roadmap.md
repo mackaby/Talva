@@ -1,6 +1,6 @@
 # Roadmap
 
-- [x] Reframe app categories around large-scale internal apps, legacy modernization, knowledge graphs and semantic access; keep CRM as an example.
+- [x] Reframe app categories around internal apps of any size, legacy modernization, knowledge graphs and semantic access; keep CRM as an example.
 
 - [x] Define a small, repeatable content structure starting with one topic cluster.
 - [x] Provide an initial editorial backlog and expansion criteria.

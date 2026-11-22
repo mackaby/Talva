@@ -65,7 +65,7 @@ function AppPage() {
           )}
           {app.level === "example" && (
             <p className="mt-5 text-sm text-muted-foreground">
-              Part of <Link to="/apps/$slug" params={{ slug: "internal-tools" }} className="text-primary hover:underline">large-scale internal apps</Link>, alongside systems such as digital asset management (DAM).
+              Part of <Link to="/apps/$slug" params={{ slug: "internal-tools" }} className="text-primary hover:underline">internal company apps</Link>, alongside systems such as digital asset management (DAM).
             </p>
           )}
         </section>

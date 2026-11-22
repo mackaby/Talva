@@ -9,7 +9,7 @@ Key facts:
 - Clients: client-agnostic. Works with the agentic client a team prefers, such as Codex, Claude Code, OpenCode or OpenClaw.
 - Users: people and AI agents are both first-class users of the same apps.
 - Data: fully owned by the company that builds on Talva.
-- Use cases: large-scale internal company apps (including CRM and DAM), entire legacy-app refactoring, company knowledge graphs and a semantic access layer above existing databases.
+- Use cases: small or large internal company apps (including CRM and DAM), entire legacy-app refactoring, company knowledge graphs and a semantic access layer above existing databases.
 - Semantic access: controlled MCP (Model Context Protocol) access for agents with granular control over existing databases.
 - Status: private beta.
 - What Talva is not: not a CRM, not a graph database, not an AI model. Those are things built on or used with Talva.
@@ -25,9 +25,9 @@ Key facts:
 ## Apps
 
 - [What you can build with Talva](https://talva.dev/apps): Overview of the platform's use cases.
-- [CRM on Talva](https://talva.dev/apps/crm): An example of a large-scale internal company app, alongside DAM.
+- [CRM on Talva](https://talva.dev/apps/crm): An example of an internal company app, alongside DAM.
 - [Company knowledge graph on Talva](https://talva.dev/apps/knowledge-graph): Shared company context for people and agents.
-- [Large-scale internal apps on Talva](https://talva.dev/apps/internal-tools): Company systems such as CRM and digital asset management (DAM).
+- [Internal company apps on Talva](https://talva.dev/apps/internal-tools): Small tools and larger company systems, from request forms to CRM and digital asset management (DAM).
 - [Legacy app modernization on Talva](https://talva.dev/apps/legacy-modernization): Refactoring entire legacy company applications.
 - [Semantic access layer on Talva](https://talva.dev/apps/semantic-access-layer): Controlled MCP access for agents over existing databases with granular control.
 
